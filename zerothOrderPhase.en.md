@@ -1,6 +1,7 @@
 ---
 title: Observation Limits and the Undifferentiated Origin
 lang: en
+math: true
 description: An epistemological inquiry into observation limits and indistinguishability, from quantum measurement to cosmology.
 ---
 <!--
@@ -8,7 +9,7 @@ description: An epistemological inquiry into observation limits and indistinguis
   Description: An epistemological inquiry into observation limits and the undifferentiated origin, from quantum measurement to cosmology
   Author: 5garashi.com Design Office
   Created: 2026-10-31
-  Version: 1.0.0
+  Version: 1.0.1
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -32,23 +33,29 @@ This essay begins with the scale of measurement limits in quantum mechanics (the
 
 ## 1. Probabilistic Discrimination and the Standard Quantum Limit
 
-To formalize how difficult it is to distinguish physical states, consider the probability distributions of observational outcomes, P_A(y) and P_B(y), for two states A and B. The total variation distance (Total Variation Distance), a classical statistical measure of the overlap between these distributions, is defined as follows [1]:
+To formalize how difficult it is to distinguish physical states, consider the probability distributions of observational outcomes, $P_A(y)$ and $P_B(y)$, for two states A and B. The total variation distance (Total Variation Distance), a classical statistical measure of the overlap between these distributions, is defined as follows [1]:
 
-D_AB = (1/2) ∫ |P_A(y) - P_B(y)| dy,  0 <= D_AB <= 1
+$$
+D_{AB} = \frac{1}{2}\int \left|P_A(y)-P_B(y)\right|\,\mathrm{d}y,\qquad 0 \le D_{AB} \le 1
+$$
 
-D_AB = 1 means that the states are perfectly distinguishable, while D_AB = 0 means that they cannot be distinguished by that measurement (their distributions overlap completely) [1].
+$D_{AB} = 1$ means that the states are perfectly distinguishable, while $D_{AB} = 0$ means that they cannot be distinguished by that measurement (their distributions overlap completely) [1].
 
-Consider a toy model in which an observer measures the position of an electron located a distance d away, using a signal such as a photon. During the signal's round-trip time τ = 2d/c, a free-electron wave packet—a minimum-uncertainty Gaussian wave packet with no initial position-momentum correlation—spreads in space according to the Schrödinger equation. If its initial width is σ_0, the position uncertainty (standard deviation) Δx(τ) after a time τ is given by:
+Consider a toy model in which an observer measures the position of an electron located a distance d away, using a signal such as a photon. During the signal's round-trip time $\tau = \frac{2d}{c}$, a free-electron wave packet—a minimum-uncertainty Gaussian wave packet with no initial position-momentum correlation—spreads in space according to the Schrödinger equation. If its initial width is $\sigma_0$, the position uncertainty (standard deviation) $\Delta x(\tau)$ after a time τ is given by:
 
-Δx(τ) = √( σ_0^2 + (ħ τ / (2 m σ_0))^2 )
+$$
+\Delta x(\tau) = \sqrt{\sigma_0^2 + \left(\frac{\hbar\tau}{2m\sigma_0}\right)^2}
+$$
 
-The term ħ / (2 σ_0) in this expression comes from the initial momentum uncertainty (standard deviation) Δp of the quantum state itself, which manifests over time as spatial spreading. Optimizing the initial width σ_0 (σ_0^2 = ħ τ / 2m) gives a minimum uncertainty scale with the same form as the standard quantum limit (SQL) [2]:
+The term $\frac{\hbar}{2\sigma_0}$ in this expression comes from the initial momentum uncertainty (standard deviation) $\Delta p$ of the quantum state itself, which manifests over time as spatial spreading. Optimizing the initial width $\sigma_0$ ($\sigma_0^2 = \frac{\hbar\tau}{2m}$) gives a minimum uncertainty scale with the same form as the standard quantum limit (SQL) [2]:
 
-Δx_min ~ √( ħ τ / m ) = √( 2 ħ d / (m c) )
+$$
+\Delta x_{\min} \sim \sqrt{\frac{\hbar\tau}{m}} = \sqrt{\frac{2\hbar d}{mc}}
+$$
 
 This standard quantum limit, however, assumes specific measurement conditions and an initial wave packet without correlations; it is not an absolute lower bound that cannot be surpassed in principle. For example, techniques are known that achieve precision below the SQL by using "contractive states" with an initial negative correlation between position and momentum [2].
 
-The relative error with respect to distance d, Δx_min / d ∝ 1 / √d, decreases as the distance increases. Nevertheless, this scale offers an interesting clue for considering how information spreads through space and time, and becomes ambiguous, in the act of observation.
+The relative error with respect to distance d, $\frac{\Delta x_{\min}}{d} \propto \frac{1}{\sqrt{d}}$, decreases as the distance increases. Nevertheless, this scale offers an interesting clue for considering how information spreads through space and time, and becomes ambiguous, in the act of observation.
 
 ## 2. Localization Limits and the Limits of the Spacetime Picture
 
@@ -56,29 +63,41 @@ The relative error with respect to distance d, Δx_min / d ∝ 1 / √d, decreas
 
 Pushing the limit further shifts the question from how precisely we can determine a particle's position to how far spacetime itself—the framework that defines position and distance—can retain its meaning.
 
-As a starting point for considering this problem, let us estimate the limit of localization from the relationship between quantum mechanics and general relativity. According to the uncertainty relation in quantum mechanics, if we try to reduce a particle's position uncertainty to Δx, its momentum uncertainty is approximately
+As a starting point for considering this problem, let us estimate the limit of localization from the relationship between quantum mechanics and general relativity. According to the uncertainty relation in quantum mechanics, if we try to reduce a particle's position uncertainty to $\Delta x$, its momentum uncertainty is approximately
 
-Δp ~ ħ / Δx
+$$
+\Delta p \sim \frac{\hbar}{\Delta x}
+$$
 
 At sufficiently high energies, the corresponding energy is estimated as
 
-E ~ c Δp ~ (ħ c) / Δx
+$$
+E \sim c\,\Delta p \sim \frac{\hbar c}{\Delta x}
+$$
 
 According to general relativity, energy E has an associated gravitational length scale, the Schwarzschild radius:
 
-r_s ~ (2 G E) / c^4
+$$
+r_s \sim \frac{2GE}{c^4}
+$$
 
 Substituting the energy estimated above gives:
 
-r_s ~ (2 G ħ) / (c^3 Δx)
+$$
+r_s \sim \frac{2G\hbar}{c^3\Delta x}
+$$
 
-Consider the condition under which the size Δx of the region to be localized becomes comparable to this gravitational length scale r_s:
+Consider the condition under which the size $\Delta x$ of the region to be localized becomes comparable to this gravitational length scale $r_s$:
 
-Δx ~ r_s  =>  Δx ~ √2 l_P
+$$
+\Delta x \sim r_s \quad\Longrightarrow\quad \Delta x \sim \sqrt{2}\,l_P
+$$
 
 Here,
 
-l_P = √( (ħ G) / c^3 ) ≈ 1.6 * 10^-35 m
+$$
+l_P = \sqrt{\frac{\hbar G}{c^3}} \approx 1.6 \times 10^{-35}\,\mathrm{m}
+$$
 
 is the Planck length. This estimate suggests that the smaller the region we try to observe, the more energy is required—and the gravitational effect of that energy itself may significantly alter the spacetime of the region being measured [3].
 
@@ -92,17 +111,24 @@ The problem of indistinguishability thus reaches a deeper level. We can imagine 
 
 In high-energy particle collisions, increasing the energy of the incoming particles leads to the production of many particles and complex interactions. Information about the initial state becomes dispersed among diverse degrees of freedom and correlations between particles. In practice, it is difficult to measure every produced particle and every correlation, so we need a description of a subsystem restricted to the observable degrees of freedom.
 
-Let the state of the entire system be ρ(E), and the state of the subsystem being observed be
+Let the state of the entire system be $\rho(E)$, and the state of the subsystem being observed be
 
-ρ_obs(E) = Tr_unobs ρ(E)
+$$
+\rho_{\mathrm{obs}}(E) = \operatorname{Tr}_{\mathrm{unobs}}\rho(E)
+$$
 
-Here E is the center-of-mass energy of the collision, defined as E ≡ √s. Tr_unobs denotes the operation of removing unobserved degrees of freedom by taking a partial trace.
+Here E is the center-of-mass energy of the collision, defined as $E \equiv \sqrt{s}$. $\operatorname{Tr}_{\mathrm{unobs}}$ denotes the operation of removing unobserved degrees of freedom by taking a partial trace.
 
-In quantum information geometry, this kind of coarse-graining affects the parameter-discrimination capability retained by the observable subsystem. Quantum Fisher information (QFI), F_Q(E), quantifies how well a quantum state can distinguish changes in the parameter E [5]. Reducing the state to a subsystem may cause it to lose some of the discrimination capability retained by the full system [5].
+In quantum information geometry, this kind of coarse-graining affects the parameter-discrimination capability retained by the observable subsystem. Quantum Fisher information (QFI), $F_Q(E)$, quantifies how well a quantum state can distinguish changes in the parameter E [5]. Reducing the state to a subsystem may cause it to lose some of the discrimination capability retained by the full system [5].
 
 The distinguishability of quantum states that depend on energy E can be expressed locally using the Bures distance [5]. For a smooth family of quantum states and a sufficiently small energy change dE,
 
-D_Bures( ρ_obs(E), ρ_obs(E + dE) )^2 ≈ (1/4) F_Q(E) (dE)^2 + O((dE)^3)
+$$
+\begin{aligned}
+D_{\mathrm{Bures}}\!\left(\rho_{\mathrm{obs}}(E),\rho_{\mathrm{obs}}(E+\mathrm{d}E)\right)^2
+&\approx \frac{1}{4}F_Q(E)\,(\mathrm{d}E)^2 + O\!\left((\mathrm{d}E)^3\right)
+\end{aligned}
+$$
 
 holds [5]. If the QFI of the observable subsystem decreases, then the effective distinguishability between nearby energy states in that subsystem also decreases (the first stage).
 
@@ -116,11 +142,11 @@ Let us now shift the motif of "blurred boundaries and dispersed information" see
 
 Observing a distant celestial object is equivalent to looking into the past of the universe, because the speed of light is finite. The most distant light we can detect with a telescope, the cosmic microwave background (CMB), carries information from the "recombination era" (the surface of last scattering), about 380,000 years after the universe began [6].
 
-The CMB is remarkably uniform across the sky, at roughly the 10^-5 level [6]. These tiny fluctuations are "distinguishable structural information" that later seeded galaxies and large-scale structures. But if we conduct a thought experiment that traces spacetime further back (t -> 0), then near the singularity the framework for describing classical spacetime itself ceases to hold (the second stage) [3].
+The CMB is remarkably uniform across the sky, at roughly the $10^{-5}$ level [6]. These tiny fluctuations are "distinguishable structural information" that later seeded galaxies and large-scale structures. But if we conduct a thought experiment that traces spacetime further back ($t \to 0$), then near the singularity the framework for describing classical spacetime itself ceases to hold (the second stage) [3].
 
-### 3.2 The Limit in the Direction of Time (t -> +∞) and the Fate of the Universe
+### 3.2 The Limit in the Direction of Time ($t \to +\infty$) and the Fate of the Universe
 
-Looking toward the future along the time axis (t -> +∞), scenarios have been proposed in which the universe continues to expand, stars burn out, black holes evaporate, and usable free energy is depleted toward a maximum, leading to heat death (the Big Freeze) [7].
+Looking toward the future along the time axis ($t \to +\infty$), scenarios have been proposed in which the universe continues to expand, stars burn out, black holes evaporate, and usable free energy is depleted toward a maximum, leading to heat death (the Big Freeze) [7].
 
 Conformal Cyclic Cosmology (CCC), proposed by Roger Penrose, considers a limit in the distant future in which residual particles such as electrons eventually lose the meaning of rest mass, and the universe acquires scale invariance [8]. In this picture, the scales used to express differences in length and time themselves lose their meaning (the second stage). Conformal and causal structures, however, remain. CCC is a compelling hypothesis: it proposes that the conformal geometric structure of the distant future, after mass and scale have been lost, could connect smoothly to the structure of the beginning of the next universe (the Big Bang singularity) [8].
 
@@ -130,10 +156,10 @@ Conformal Cyclic Cosmology (CCC), proposed by Roger Penrose, considers a limit i
 
 Let us lay out the four limiting situations discussed so far:
 
-1. **The very early universe (t → 0):** A region near the singularity where the classical description of spacetime itself ceases to hold.
-2. **The distant future of the universe (t → +∞):** A limit in which, after heat death, the scales of length and time themselves lose their meaning in the CCC picture.
-3. **The microscopic localization limit (Δx → 0):** A region where pushing localization to its limit reaches the boundary of the geometric picture of spacetime at the Planck scale.
-4. **The high-energy scattering limit (E = √s → ∞):** A regime in which multiparticle production, information dispersion, and the resolution limit imposed by gravitational back-reaction become relevant.
+1. **The very early universe ($t \to 0$):** A region near the singularity where the classical description of spacetime itself ceases to hold.
+2. **The distant future of the universe ($t \to +\infty$):** A limit in which, after heat death, the scales of length and time themselves lose their meaning in the CCC picture.
+3. **The microscopic localization limit ($\Delta x \to 0$):** A region where pushing localization to its limit reaches the boundary of the geometric picture of spacetime at the Planck scale.
+4. **The high-energy scattering limit ($E = \sqrt{s} \to \infty$):** A regime in which multiparticle production, information dispersion, and the resolution limit imposed by gravitational back-reaction become relevant.
 
 These limits involve different physical mechanisms and scales, but each raises the same question: how far can the boundaries that allow us to distinguish one thing from another remain valid?
 
@@ -170,17 +196,21 @@ Existing theories offer several clues about the connection between the micro and
 
 **(1) The UV/IR connection.** Cohen, Kaplan, and Nelson applied the reasoning that smaller regions require greater energy—and that gravity eventually cannot be ignored—to the relationship between the size L of a region and the ultraviolet cutoff Λ of a field theory [10]:
 
-L^3 Λ^4 <= L M_P^2
+$$
+L^3\Lambda^4 \le L M_P^2
+$$
 
 The limit on the microscopic side (the ultraviolet) is connected by a single equation to the macroscopic size (the infrared) [10].
 
 **(2) An upper bound on the number of distinguishable states.** The holographic principle (the Bousso bound) suggests that, under suitable conditions, the entropy associated with a region is bounded by the area of its boundary [11]:
 
-S <= A / (4 l_P^2)
+$$
+S \le \frac{A}{4l_P^2}
+$$
 
-This gives an upper bound on the number of states, N <= exp( A / (4 l_P^2) ) [11].
+This gives an upper bound on the number of states, $N \le \exp\!\left(\frac{A}{4l_P^2}\right)$ [11].
 
-**(3) Entropy of cosmological horizons.** Gibbons and Hawking associated an entropy S = A / (4 l_P^2) with the horizon of de Sitter space [12].
+**(3) Entropy of cosmological horizons.** Gibbons and Hawking associated an entropy $S = \frac{A}{4l_P^2}$ with the horizon of de Sitter space [12].
 
 These ideas serve as existing foundations for quantitatively discussing limits on distinguishability [11, 12].
 

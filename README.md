@@ -8,7 +8,15 @@
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 1.0.0([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 1.0.1([改版履歴 / Changelog](CHANGELOG.md))
+
+数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
+Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.
+
+数式表示の確認 / Math display checks (2026-10-31): 日英の独立数式13組の一致と版・差分を確認。ブラウザーの目視、200%拡大、小画面、キーボード、読み上げは未確認。
+Checked: matching sets of 13 display equations, versions and diffs. Browser appearance, 200% zoom, narrow screens, keyboard use and screen readers remain unverified.
+
+デザイン基準 / Design reference: [5garashi.com設計事務所 / 5garashi.com Design Office — Identity](https://5garashi.github.io/5garashi-identity/), v4.20.0 (確認 / checked: 2026-10-31).
 
 量子測定の限界から宇宙論の極限までをたどり、対象を区別する基準そのものが意味を失う極限を「未分化の第零次相(Zeroth-Order Phase)」と仮称して考える試論です。定量的な予測を示す論文ではなく、思考実験として書いています。
 

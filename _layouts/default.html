@@ -10,6 +10,10 @@
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     <title>{% if page.title and page.title != site.title %}{{ page.title | escape }} — {{ site.title | escape }}{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% if page.math %}
+    <script src="{{ '/assets/js/math-config.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/vendor/mathjax/tex-svg-full.js' | relative_url }}"></script>
+    {% endif %}
   </head>
   <body>
     <a class="skip-link" href="#main">{% if is_english %}Skip to content{% else %}本文へ移動{% endif %}</a>

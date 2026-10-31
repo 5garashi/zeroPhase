@@ -11,6 +11,13 @@
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
 
+## 1.0.1 — 2026-10-31
+
+- 日英本文の分数・根号・積分・添え字・累乗を LaTeX 数式記法に変更。数学的内容は変更していない。
+  Format fractions, roots, integrals, subscripts and powers as LaTeX math in both essays, preserving their mathematical content.
+- MathJax 3.2.2 (Apache-2.0) を同梱し、GitHub Pages で数式を描画する。長い独立数式は枠内で横スクロールできる。
+  Bundle MathJax 3.2.2 (Apache-2.0) for GitHub Pages, with horizontal scrolling for long display equations.
+
 ## 1.0.0 — 2026-10-31
 
 最初の公開版。下書きの第20稿を、版 1.0.0 として公開した。

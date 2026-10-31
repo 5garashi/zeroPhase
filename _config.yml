@@ -10,6 +10,8 @@ lang: ja
 url: https://5garashi.github.io
 baseurl: /zeroPhase
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
 defaults:
   - scope:
       path: ""

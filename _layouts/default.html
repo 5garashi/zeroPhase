@@ -14,7 +14,33 @@
   <body>
     <a class="skip-link" href="#main">{% if is_english %}Skip to content{% else %}本文へ移動{% endif %}</a>
     <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">Zeroth-Order Phase</a>
+      <a class="site-title" href="{{ '/' | relative_url }}" aria-label="{% if is_english %}Home{% else %}トップページ{% endif %}">
+        {% if is_english %}
+          <picture>
+            <source
+              srcset="{{ '/assets/brand/5garashi_logotype_en_reversed_outlined.svg' | relative_url }}"
+              media="(prefers-color-scheme: dark)">
+            <img
+              class="site-logo"
+              src="{{ '/assets/brand/5garashi_logotype_en_outlined.svg' | relative_url }}"
+              alt="5garashi.com Design Office"
+              width="555"
+              height="215">
+          </picture>
+        {% else %}
+          <picture>
+            <source
+              srcset="{{ '/assets/brand/5garashi_logotype_reversed_outlined.svg' | relative_url }}"
+              media="(prefers-color-scheme: dark)">
+            <img
+              class="site-logo"
+              src="{{ '/assets/brand/5garashi_logotype_outlined.svg' | relative_url }}"
+              alt="5garashi.com設計事務所"
+              width="555"
+              height="215">
+          </picture>
+        {% endif %}
+      </a>
       <nav class="language-nav" aria-label="{% if is_english %}Language{% else %}言語{% endif %}">
         {% if is_english %}
           <a href="{{ '/zerothOrderPhase.html' | relative_url }}" lang="ja">日本語</a>
@@ -34,6 +60,16 @@
         {% else %}
           本文のライセンス:
         {% endif %}
+        <a href="https://creativecommons.org/licenses/by-nd/4.0/">
+          CC BY-ND 4.0
+        </a>
+      </p>
+      <p class="logo-credit">
+        {% if is_english %}Logotype:{% else %}ロゴタイプ:{% endif %}
+        <a href="https://github.com/5garashi/5garashi-identity/tree/main/assets">
+          5garashi.com設計事務所 / 5garashi.com Design Office
+        </a>
+        —
         <a href="https://creativecommons.org/licenses/by-nd/4.0/">
           CC BY-ND 4.0
         </a>

@@ -12,9 +12,13 @@
 
 量子測定の限界から宇宙論の極限までをたどり、対象を区別する基準そのものが意味を失う極限を「未分化の第零次相(Zeroth-Order Phase)」と仮称して考える試論です。定量的な予測を示す論文ではなく、思考実験として書いています。
 
-An essay that follows measurement limits from quantum physics to the extremes of cosmology, and tentatively names the limit where the very criteria for telling things apart lose their meaning the "Zeroth-Order Phase". It is a thought experiment, not a paper with quantitative predictions.
+An essay that follows measurement limits from quantum physics to the extremes of cosmology, tentatively naming the limit where the very criteria for telling things apart lose their meaning the "Zeroth-Order Phase". It is a thought experiment, not a paper with quantitative predictions.
 
-**本文を読む / Read the essay**: [electron_cosmology_report.md](electron_cosmology_report.md)(本文は日本語、見出しと参考文献は日英併記 / body in Japanese; headings and references in Japanese and English)
+**本文を読む / Read the essay**
+
+- [日本語版 / Japanese](https://5garashi.github.io/zeroPhase/zerothOrderPhase.html)
+- [English](https://5garashi.github.io/zeroPhase/zerothOrderPhase.en.html)
+- ソース / Source: [zerothOrderPhase.md](zerothOrderPhase.md) / [zerothOrderPhase.en.md](zerothOrderPhase.en.md)
 
 ## 内容 / Contents
 
@@ -28,7 +32,7 @@ An essay that follows measurement limits from quantum physics to the extremes of
 
 | ファイル / File | 内容 / Contents |
 | :--- | :--- |
-| `electron_cosmology_report.md` | 本文 / The essay |
+| `zerothOrderPhase.md` / `zerothOrderPhase.en.md` | 日本語版 / English essay |
 | `VERSION` | 版の番号(Identity 12-7) / Version number |
 | `CHANGELOG.md` | 改版履歴 / Revision history |
 | `LICENSE` | 本文のライセンス(CC BY-ND 4.0) / License of the text |

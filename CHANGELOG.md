@@ -1,0 +1,24 @@
+<!--
+  ファイル名 / File: CHANGELOG.md
+  概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
+  作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
+  作成日 / Created: 2026-10-31
+  ライセンス / License: CC BY-ND 4.0
+  SPDX-License-Identifier: CC-BY-ND-4.0
+-->
+# 改版履歴 / Changelog — zeroPhase
+
+版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
+Changes by version, newest first (Identity 12-7 (9)).
+
+## 1.0.0 — 2026-10-31
+
+最初の公開版。下書きの第20稿を、版 1.0.0 として公開した。
+First public version: the 20th draft, published as version 1.0.0.
+
+- 本文 `electron_cosmology_report.md`(旧名 `electron_cosmology_report_V20.md`)を公開した。版は VERSION とヘッダーで示すため、ファイル名から下書きの番号を外した(Identity 8-5、12-7 (5))。
+  Published the essay `electron_cosmology_report.md` (formerly `electron_cosmology_report_V20.md`); the draft number was dropped from the file name because the version lives in VERSION and the header.
+- Design Office Identity 4.20.0 を当てはめた:ファイルヘッダー(9-3)、著者の公式表記(8-6)、末尾の署名(9-5)。
+  Applied Design Office Identity 4.20.0: file header (9-3), official author name (8-6), and closing signature (9-5).
+- GitHub での表示を直した:4.3 の図の行が1行に連結されないよう整形済みテキストにし、「未分化の第零次相」の太字が表示されるよう括弧の内側に移し、末尾に残っていた閉じていない「````」を削除した。本文の内容は変えていない。
+  Fixed display on GitHub: the diagram in 4.3 is now preformatted text so its lines stay separate, the bold "Zeroth-Order Phase" moved inside the brackets so it renders, and a stray unclosed "````" at the end was removed. The content is unchanged.

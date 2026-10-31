@@ -41,9 +41,9 @@ An essay that follows measurement limits from quantum physics to the extremes of
 
 ## 改版のしかた / How to revise
 
-1. `electron_cosmology_report.md` を直す。 / Edit the essay.
+1. `zerothOrderPhase.md` と `zerothOrderPhase.en.md` を直す。 / Edit the Japanese and English essays.
 2. 内容が変わるときは `VERSION` を上げ、`CHANGELOG.md` に節を足し、この README の版の行を直す(Identity 12-7 (10))。 / When the content changes, raise `VERSION`, add a `CHANGELOG.md` section, and update the version line above.
-3. `python tools/check_version.py --stamp electron_cosmology_report.md` で本文の版を書き込み、`python tools/check_version.py` で確かめる。 / Stamp and check the version.
+3. `python tools/check_version.py --stamp zerothOrderPhase.md zerothOrderPhase.en.md` で両方の本文に版を書き込み、`python tools/check_version.py` で確かめる。 / Stamp and check both essays.
 4. main に push すると、`vX.Y.Z` のタグと GitHub の Release が作られる。 / Pushing to main creates the `vX.Y.Z` tag and a GitHub Release.
 
 ## ライセンス / License

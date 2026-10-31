@@ -1,0 +1,167 @@
+/*
+  File: assets/css/style.css
+  Description: Accessible styles for the bilingual GitHub Pages essay
+  Author: 5garashi.com Design Office
+  Created: 2026-10-31
+  License: MIT
+  SPDX-License-Identifier: MIT
+*/
+:root {
+  color-scheme: light;
+  --paper: #F9EFCB;
+  --head: #FFE699;
+  --ink: #385723;
+  --volt: #B92613;
+  --card: #FFFDF2;
+  --line: #DFCF9A;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --paper: #1A2212;
+    --head: #2B3A20;
+    --ink: #C9C1A5;
+    --volt: #F07B5F;
+    --card: #222C1A;
+    --line: #4C5C3B;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Noto Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--ink);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-thickness: 0.16em;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--volt);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -10000px;
+  z-index: 1;
+  padding: 0.65rem 1rem;
+  background: var(--card);
+}
+
+.skip-link:focus {
+  left: 0.75rem;
+  top: 0.75rem;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding: 1rem max(1.25rem, calc((100% - 72rem) / 2));
+  background: var(--head);
+  border-bottom: 2px solid var(--ink);
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.language-nav a {
+  display: inline-flex;
+  min-width: 5.5rem;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.75rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--card);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-content {
+  width: min(100% - 2rem, 72rem);
+  min-height: 65vh;
+  margin: 2rem auto 4rem;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  overflow-wrap: anywhere;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3 {
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+
+.page-content h1 {
+  font-size: clamp(1.65rem, 4vw, 2.4rem);
+}
+
+.page-content h2 {
+  margin-top: 2.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-content > ul a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+
+.page-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+}
+
+.page-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.site-footer {
+  padding: 1.5rem 1rem 2rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+}

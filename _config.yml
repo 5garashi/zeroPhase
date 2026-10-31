@@ -1,0 +1,22 @@
+# File: _config.yml
+# Description: GitHub Pages configuration for the bilingual essay
+# Author: 5garashi.com Design Office
+# Created: 2026-10-31
+# License: MIT
+# SPDX-License-Identifier: MIT
+title: Observation Limits and the Undifferentiated Origin
+description: A bilingual thought experiment from quantum measurement to cosmology.
+lang: ja
+url: https://5garashi.github.io
+baseurl: /zeroPhase
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+exclude:
+  - .github
+  - README.md
+  - LICENSE

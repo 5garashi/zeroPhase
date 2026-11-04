@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.2.0
+  版 / Version: 1.3.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,17 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 1.3.0 — 2026-11-04
+
+- 元の付録1・2を、日本語の独立文書「観測限界を整理する三相モデルの論理的背景」「観測限界と識別可能性の数式解説」として整理・公開した。
+  Published the former appendices as two standalone Japanese documents on the logical background of the three-phase model and the meaning and derivation of the equations.
+- 三相・五つの極限領域を、本文の二段階・四つの極限を補う考察として位置づけた。付録2では元の10項目の数式と比較表を保持し、仮定・導出・適用条件を補足した。
+  Positioned the three-phase model and five limits as supplementary considerations, retaining the original ten mathematical topics and comparison table with clarified assumptions and scope.
+- 日本語本文・READMEから付録へ、付録どうしと本文へリンクを追加した。付録のヘッダーは「本文へ」とし、存在しない英語版への切り替えと誤認させない表示にした。
+  Added navigation between the Japanese essay and the appendices; appendix headers link back to the essay rather than implying an English counterpart.
+- 本文の論旨と既存の独立数式13組は変更していない。英語本文の原稿は改訂していない。
+  The essay’s argument and its thirteen display equations are unchanged; the English source is unchanged.
 
 ## 1.2.0 — 2026-11-04
 
@@ -54,5 +65,6 @@ First public version: the 20th draft, published as version 1.0.0.
   Applied Design Office Identity 4.20.0: file header (9-3), official author name (8-6), and closing signature (9-5).
 - GitHub での表示を直した:4.3 の図の行が1行に連結されないよう整形済みテキストにし、「未分化の第零次相」の太字が表示されるよう括弧の内側に移し、末尾に残っていた閉じていない「````」を削除した。本文の内容は変えていない。
   Fixed display on GitHub: the diagram in 4.3 is now preformatted text so its lines stay separate, the bold "Zeroth-Order Phase" moved inside the brackets so it renders, and a stray unclosed "````" at the end was removed. The content is unchanged.
+
 
 

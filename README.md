@@ -3,20 +3,20 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.2.0
+  版 / Version: 1.3.0
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 1.2.0([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 1.3.0([改版履歴 / Changelog](CHANGELOG.md))
 
 数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
 Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.
 
 適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.22.0（2026-11-04確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
 
-日本語版と英語版は同じ版の内容に対応する。本文の表示先はGitHub Pagesの公開ページを指定する（Identity 8-9 (9)）。GitHubのソース表示とmdEditorの互換確認は本版の対象外とし、公開ページの表示を確認する。
+日本語本文と英語本文の論旨は対応する。付録は日本語の補助文書として別に公開する。改訂していない英語本文の版は、最後に改訂した版を示す。本文の表示先はGitHub Pagesの公開ページを指定する（Identity 8-9 (9)）。GitHubのソース表示とmdEditorの互換確認は本版の対象外とし、公開ページの表示を確認する。
 
 量子測定の限界から宇宙論の極限までをたどり、対象を区別する基準そのものが意味を失う極限を「未分化の第零次相(Zeroth-Order Phase)」と仮称して考える試論です。定量的な予測を示す論文ではなく、思考実験として書いています。
 
@@ -36,11 +36,17 @@ An essay that follows measurement limits from quantum physics to the extremes of
 4. 四つの極限と「未分化の第零次相」の提案 / Four limits and the proposed Zeroth-Order Phase
 5. 結論と展望 / Conclusion
 
+## 付録
+
+- [付録1：観測限界を整理する三相モデルの論理的背景](https://5garashi.github.io/zeroPhase/appendix1.html)
+- [付録2：観測限界と識別可能性の数式解説](https://5garashi.github.io/zeroPhase/appendix2.html)
+
 ## ファイル / Files
 
 | ファイル / File | 内容 / Contents |
 | :--- | :--- |
 | `zerothOrderPhase.md` / `zerothOrderPhase.en.md` | 日本語版 / English essay |
+| `appendix1.md` / `appendix2.md` | 三相モデルの論理的背景 / 数式解説 |
 | `VERSION` | 版の番号(Identity 12-7) / Version number |
 | `CHANGELOG.md` | 改版履歴 / Revision history |
 | `LICENSE` | 本文のライセンス(CC BY-ND 4.0) / License of the text |
@@ -66,5 +72,6 @@ Copyright © 2026 5garashi.com設計事務所 / 5garashi.com Design Office
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
 **最終更新 / Last updated**: 2026-11-04 JST
+
 
 

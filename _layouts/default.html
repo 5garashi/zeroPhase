@@ -3,7 +3,7 @@
   概要 / Description: 日本語・英語の試論の共通レイアウト
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.2.0
+  版 / Version: 1.3.0
   ライセンス / License: MIT
   SPDX-License-Identifier: MIT
 -->
@@ -54,8 +54,10 @@
           </picture>
         {% endif %}
       </a>
-      <nav class="language-nav" aria-label="{% if is_english %}Language{% else %}言語{% endif %}">
-        {% if is_english %}
+      <nav class="language-nav" aria-label="{% if page.appendix %}関連文書{% elsif is_english %}Language{% else %}言語{% endif %}">
+        {% if page.appendix %}
+          <a href="{{ '/zerothOrderPhase.html' | relative_url }}">本文へ</a>
+        {% elsif is_english %}
           <a href="{{ '/zerothOrderPhase.html' | relative_url }}" lang="ja">日本語</a>
         {% else %}
           <a href="{{ '/zerothOrderPhase.en.html' | relative_url }}" lang="en">English</a>
@@ -91,5 +93,6 @@
     </footer>
   </body>
 </html>
+
 
 

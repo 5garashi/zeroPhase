@@ -10,7 +10,7 @@ description: 対象の識別不能と識別基準の不成立を分け、四つ�
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-28
   最終更新 / Last updated: 2026-11-04 JST
-  版 / Version: 1.2.0
+  版 / Version: 1.3.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,7 @@ description: 対象の識別不能と識別基準の不成立を分け、四つ�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>1.2.0</span>　**更新日:** 2026-11-04 JST
+**版:** <span data-version>1.3.0</span>　**更新日:** 2026-11-04 JST
 
 ---
 
@@ -235,6 +235,13 @@ $$
 
 ---
 
+## 付録
+
+- [付録1：観測限界を整理する三相モデルの論理的背景](appendix1.html)
+- [付録2：観測限界と識別可能性の数式解説](appendix2.html)
+
+---
+
 ## 参考文献
 
 1. IBM Quantum Learning, "Quantum state discrimination and tomography". (Information-theoretic formulation of state distinguishability)
@@ -255,5 +262,6 @@ $$
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
 **最終更新 / Last updated**: 2026-11-04 JST
+
 
 

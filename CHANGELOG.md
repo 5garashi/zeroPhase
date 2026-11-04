@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.1.1
+  版 / Version: 1.2.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,15 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 1.2.0 — 2026-11-04
+
+- 現行の日本語本文に対応する英語版を作成。序章・全5章・比較表・参考文献を揃え、二段階・四つの極限、仮説の限定を保持した。
+  Updated the English edition to match the current Japanese essay, including the introduction, five sections, comparison table, and references, preserving the two stages, four limits, and qualifications of the hypotheses.
+- 日本語ページから翻訳予定の告知、表示実装の説明、確認記録へのリンクを削除。公開本文は読者向けの内容と版・著者・更新日の情報に整理した。
+  Removed the translation-status notice, rendering implementation notes, and verification-record links from the Japanese essay page, retaining reader-facing content and edition metadata.
+- 日本語版・英語版の数式と引用番号を照合。README・VERSION・確認記録を更新した。
+  Checked equations and citation numbers across both editions and updated README, VERSION, and verification records.
 
 ## 1.1.1 — 2026-11-04
 
@@ -45,4 +54,5 @@ First public version: the 20th draft, published as version 1.0.0.
   Applied Design Office Identity 4.20.0: file header (9-3), official author name (8-6), and closing signature (9-5).
 - GitHub での表示を直した:4.3 の図の行が1行に連結されないよう整形済みテキストにし、「未分化の第零次相」の太字が表示されるよう括弧の内側に移し、末尾に残っていた閉じていない「````」を削除した。本文の内容は変えていない。
   Fixed display on GitHub: the diagram in 4.3 is now preformatted text so its lines stay separate, the bold "Zeroth-Order Phase" moved inside the brackets so it renders, and a stray unclosed "````" at the end was removed. The content is unchanged.
+
 

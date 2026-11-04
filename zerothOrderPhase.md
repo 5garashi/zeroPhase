@@ -3,7 +3,6 @@ title: 観測限界と未分化の原点：量子測定から宇宙論へ至る�
 lang: ja
 math: true
 description: 対象の識別不能と識別基準の不成立を分け、四つの極限から第零次相を考える試論。
-revision_notice: 日本語版を更新しました。英語版は旧版のままで、翻訳は後日まとめて行います。
 ---
 <!--
   ファイル名 / File: zerothOrderPhase.md
@@ -11,7 +10,7 @@ revision_notice: 日本語版を更新しました。英語版は旧版のまま
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-28
   最終更新 / Last updated: 2026-11-04 JST
-  版 / Version: 1.1.1
+  版 / Version: 1.2.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -19,11 +18,7 @@ revision_notice: 日本語版を更新しました。英語版は旧版のまま
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>1.1.1</span>　**更新日:** 2026-11-04 JST
-
-本稿は日本語版です。表示先は、このリポジトリから生成する GitHub Pages の公開ページとします。数式は同梱の MathJax で表示します。
-
-[改版履歴](https://github.com/5garashi/zeroPhase/blob/main/CHANGELOG.md) / [文書の確認記録](https://github.com/5garashi/zeroPhase/blob/main/TESTING.md)
+**版:** <span data-version>1.2.0</span>　**更新日:** 2026-11-04 JST
 
 ---
 
@@ -260,4 +255,5 @@ $$
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
 **最終更新 / Last updated**: 2026-11-04 JST
+
 

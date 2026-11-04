@@ -3,7 +3,7 @@
   概要 / Description: 日本語・英語の試論の共通レイアウト
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.1.1
+  版 / Version: 1.2.0
   ライセンス / License: MIT
   SPDX-License-Identifier: MIT
 -->
@@ -63,9 +63,6 @@
       </nav>
     </header>
     <main id="main" class="page-content">
-      {% if page.revision_notice %}
-      <p class="edition-notice">{{ page.revision_notice | escape }}</p>
-      {% endif %}
       {{ content }}
     </main>
     <footer class="site-footer">
@@ -94,4 +91,5 @@
     </footer>
   </body>
 </html>
+
 

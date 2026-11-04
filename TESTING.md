@@ -3,7 +3,7 @@
   概要 / Description: 日本語版の文書とWeb表示の確認方法・確認記録
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-04
-  版 / Version: 1.1.0
+  版 / Version: 1.1.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->

@@ -11,7 +11,7 @@ revision_notice: 日本語版を更新しました。英語版は旧版のまま
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-28
   最終更新 / Last updated: 2026-11-04 JST
-  版 / Version: 1.1.0
+  版 / Version: 1.1.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -19,7 +19,7 @@ revision_notice: 日本語版を更新しました。英語版は旧版のまま
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>1.1.0</span>　**更新日:** 2026-11-04 JST
+**版:** <span data-version>1.1.1</span>　**更新日:** 2026-11-04 JST
 
 本稿は日本語版です。表示先は、このリポジトリから生成する GitHub Pages の公開ページとします。数式は同梱の MathJax で表示します。
 

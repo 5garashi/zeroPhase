@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.1.0
+  版 / Version: 1.1.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,11 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 1.1.1 — 2026-11-04
+
+- 公開後のChrome確認で、新しい本文と古いCSSが組み合わさるキャッシュ残存を確認。CSSのURLにビルド時刻を付け、更新した配色が読み込まれるようにした。
+- 確認結果は TESTING.md に記録する。本文の内容と数式は1.1.0から変更していない。
 
 ## 1.1.0 — 2026-11-04
 

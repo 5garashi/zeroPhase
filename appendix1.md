@@ -10,7 +10,7 @@ description: 既存理論・認識論的定義・独自仮説を分け、時空�
   概要 / Description: 三相モデルの定義と論理的背景
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-04
-  版 / Version: 1.3.0
+  版 / Version: 1.3.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,7 @@ description: 既存理論・認識論的定義・独自仮説を分け、時空�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>1.3.0</span>　**更新日:** 2026-11-04 JST
+**版:** <span data-version>1.3.1</span>　**更新日:** 2026-11-04 JST
 
 本付録は、観測者にとっての識別可能性を「時空限界相・次元縮減相・第零次相」という三つの概念で整理する。既存理論が示す制約、観測に基づく定義、それらを越えて提案する仮説を区別することが目的である。
 

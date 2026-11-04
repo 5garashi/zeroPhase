@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.3.0
+  版 / Version: 1.3.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,11 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 1.3.1 — 2026-11-04
+
+- 公開後に、付録2の文中数式の縦棒が表の区切りに解釈される箇所を確認。縦棒をLaTeXの `\vert` に変更し、ケット・内積・密度行列の説明を修正した。数学的内容は変更していない。
+  Replaced literal vertical bars in Appendix 2’s math with LaTeX `\vert` so Kramdown does not interpret the surrounding prose as tables. The mathematical content is unchanged.
 
 ## 1.3.0 — 2026-11-04
 

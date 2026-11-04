@@ -10,7 +10,7 @@ description: 全変動距離、自由波束、SQL型見積もり、プランク�
   概要 / Description: 観測限界と識別可能性を考える数式の意味・導出・適用条件
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-04
-  版 / Version: 1.3.0
+  版 / Version: 1.3.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,7 @@ description: 全変動距離、自由波束、SQL型見積もり、プランク�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>1.3.0</span>　**更新日:** 2026-11-04 JST
+**版:** <span data-version>1.3.1</span>　**更新日:** 2026-11-04 JST
 
 本付録は、観測限界を考える数式について、意味・導出・適用条件を説明する。本文の計算に加え、局所的識別不能を示す二準位系のモデルや、三相モデルを考える補助的な関係も扱う。各式から第零次相の存在が直接証明されるわけではない。
 
@@ -29,7 +29,7 @@ description: 全変動距離、自由波束、SQL型見積もり、プランク�
 全変動距離は、指定した測定で得られる二つの確率分布の違いを表す。
 
 $$
-D_{AB}=\frac{1}{2}\int |P_A(y)-P_B(y)|\,\mathrm{d}y
+D_{AB}=\frac{1}{2}\int \vert P_A(y)-P_B(y)\vert \,\mathrm{d}y
 $$
 
 $P_A(y)$ と $P_B(y)$ は、状態A・Bから得られる測定結果の確率密度である。各測定値 $y$ での密度の絶対差を積分し、値が0から1の範囲になるよう係数 $1/2$ を掛ける。
@@ -131,19 +131,19 @@ $$
 二つの二準位系の相関を用いると、全体系で区別できる二状態が、一方の系だけでは区別しにくくなる例を作れる。
 
 $$
-|\Psi_\pm\rangle=
-\frac{|0\rangle_1|0\rangle_2\pm|1\rangle_1|\chi_\theta\rangle_2}{\sqrt2}
+\vert \Psi_\pm\rangle=
+\frac{\vert 0\rangle_1\vert 0\rangle_2\pm\vert 1\rangle_1\vert \chi_\theta\rangle_2}{\sqrt2}
 $$
 
 $$
-|\chi_\theta\rangle=\cos\theta|0\rangle+\sin\theta|1\rangle,
+\vert \chi_\theta\rangle=\cos\theta\vert 0\rangle+\sin\theta\vert 1\rangle,
 \qquad 0\le\theta\le\frac{\pi}{2}
 $$
 
 系1をスイッチ、系2をその作用を受ける環境として読むと、二つの成分には次の意味がある。
 
-- 第1項：系1が $|0\rangle_1$ のとき、系2は $|0\rangle_2$ にある。
-- 第2項：系1が $|1\rangle_1$ のとき、系2は $|\chi_\theta\rangle_2$ にある。
+- 第1項：系1が $\vert 0\rangle_1$ のとき、系2は $\vert 0\rangle_2$ にある。
+- 第2項：系1が $\vert 1\rangle_1$ のとき、系2は $\vert \chi_\theta\rangle_2$ にある。
 
 二状態の違いは両成分間の相対的な符号にある。これは基底状態の成分を用いた表現であり、それぞれを別個の世界線と解釈する必要はない。
 
@@ -161,8 +161,8 @@ $$
 
 導出は次のとおりである。
 
-1. 全体系の密度行列 $|\Psi_\pm\rangle\langle\Psi_\pm|$ を作り、系2について部分トレースを取る。
-2. 非対角成分に系2の重なり $\langle0|\chi_\theta\rangle=\cos\theta$ が現れる。
+1. 全体系の密度行列 $\vert \Psi_\pm\rangle\langle\Psi_\pm\vert $ を作り、系2について部分トレースを取る。
+2. 非対角成分に系2の重なり $\langle0\vert \chi_\theta\rangle=\cos\theta$ が現れる。
 3. 系1の二つの密度行列の差は、次の行列になる。
 
 $$
@@ -177,11 +177,11 @@ $$
 
 $$
 T(\rho_{1,+},\rho_{1,-})
-=\frac12\bigl(|\cos\theta|+|-\cos\theta|\bigr)
+=\frac12\bigl(\vert \cos\theta\vert +\vert -\cos\theta\vert \bigr)
 =\cos\theta
 $$
 
-となる。$\theta=\pi/2$ で系1の二状態は同じ密度行列となる。一方、全体系では $\langle\Psi_+|\Psi_-\rangle=0$ が保たれ、共同測定により識別できる。このモデルは、局所的識別不能と全体系の状態の同一性を分ける例である。
+となる。$\theta=\pi/2$ で系1の二状態は同じ密度行列となる。一方、全体系では $\langle\Psi_+\vert \Psi_-\rangle=0$ が保たれ、共同測定により識別できる。このモデルは、局所的識別不能と全体系の状態の同一性を分ける例である。
 
 ## 8. 非可換座標：幾何学的記述を考える手がかり
 

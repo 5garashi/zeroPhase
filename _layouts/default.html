@@ -1,3 +1,12 @@
+<!--
+  ファイル名 / File: _layouts/default.html
+  概要 / Description: 日本語・英語の試論の共通レイアウト
+  作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
+  作成日 / Created: 2026-10-31
+  版 / Version: 1.1.0
+  ライセンス / License: MIT
+  SPDX-License-Identifier: MIT
+-->
 <!doctype html>
 {% assign is_english = false %}
 {% if page.lang == "en" or page.path contains ".en.md" %}
@@ -8,7 +17,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
-    <title>{% if page.title and page.title != site.title %}{{ page.title | escape }} — {{ site.title | escape }}{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <title>{{ page.title | default: site.title | escape }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% if page.math %}
     <script src="{{ '/assets/js/math-config.js' | relative_url }}"></script>
@@ -54,6 +63,9 @@
       </nav>
     </header>
     <main id="main" class="page-content">
+      {% if page.revision_notice %}
+      <p class="edition-notice">{{ page.revision_notice | escape }}</p>
+      {% endif %}
       {{ content }}
     </main>
     <footer class="site-footer">
@@ -82,3 +94,4 @@
     </footer>
   </body>
 </html>
+

@@ -10,7 +10,7 @@ description: An exploratory essay on the limits of discrimination in quantum mea
   Author: 5garashi.com Design Office
   Created: 2026-10-31
   Last updated: 2026-11-07 JST
-  Version: 2.0.0
+  Version: 2.0.1
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,7 @@ description: An exploratory essay on the limits of discrimination in quantum mea
 
 **Author:** 5garashi.com Design Office
 
-**Version:** <span data-version>2.0.0</span>　**Last updated:** 2026-11-07 JST
+**Version:** <span data-version>2.0.1</span>　**Last updated:** 2026-11-07 JST
 
 ---
 
@@ -337,7 +337,7 @@ $$
 S \le \frac{A}{4l_P^2}
 $$
 
-If an equal mixture of $N$ allowed states is counted as $S=\ln N$ and the same bound can be applied to that mixture, the number of distinguishable states can be read as $N \le \exp\!\left(A/4l_P^2\right)$. That the number of states is determined by area rather than volume is a precedent for the way information is counted changing with scale. However, this is an upper limit on the amount of information and differs from the effective dimension of this essay (a quantity based on the sensitivity of observed states). This essay takes it as a clue to reading the Dimension-Reduction Phase, and computing the correspondence between the two quantities is left for future work.
+If an equal mixture of $N$ allowed states is counted as $S=\ln N$ and the same bound can be applied to that mixture, the number of distinguishable states can be read as $N \le \exp\left(A/4l_P^2\right)$. That the number of states is determined by area rather than volume is a precedent for the way information is counted changing with scale. However, this is an upper limit on the amount of information and differs from the effective dimension of this essay (a quantity based on the sensitivity of observed states). This essay takes it as a clue to reading the Dimension-Reduction Phase, and computing the correspondence between the two quantities is left for future work.
 
 **(3) The entropy of the cosmological horizon.** Gibbons and Hawking associated an entropy $S = A/4l_P^2$ with the horizon of de Sitter space [15]. The number of states an observer in a universe that keeps accelerating can distinguish is bounded to a finite value by the area of the horizon. This is a foothold showing that, in the far-future limit ($t\to+\infty$), the total amount of distinction available to the observer closes to a finite value, and it is a future-side clue toward the Zeroth-Order Phase.
 

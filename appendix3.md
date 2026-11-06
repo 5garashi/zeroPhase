@@ -11,8 +11,8 @@ description: CCCの共形接続とペンローズの「質量がなければ時�
   概要 / Description: CCCの共形接続と観測者の時空的識別に基づく三相の接続案
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-05
-  最終更新 / Last updated: 2026-11-06 JST
-  版 / Version: 2.0.0
+  最終更新 / Last updated: 2026-11-07 JST
+  版 / Version: 2.0.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -20,7 +20,7 @@ description: CCCの共形接続とペンローズの「質量がなければ時�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>2.0.0</span>　**更新日:** 2026-11-06 JST
+**版:** <span data-version>2.0.1</span>　**更新日:** 2026-11-07 JST
 
 本付録は、共形サイクリック宇宙論（Conformal Cyclic Cosmology, CCC）における宇宙の接続境界を、**観測者が時空的な測定基準を構成できない第零次相**として捉える試論である。CCCから共形接続の幾何学と、ペンローズの「静止質量がなければ時計を作れない」という議論を借り、それを観測者が利用できるすべての物理量へ広げる。本試論はCCCのすべての主張に一致することを目指さず、引用できる部分を足場として用いる。
 
@@ -52,7 +52,7 @@ $$
 
 ### 2.2 共通の幾何学を介してつなぐ
 
-前後の宇宙の物理的計量 $g^-_{ab}, g^+_{ab}$ は、共通の共形計量 $\widetilde{g}_{ab}$ を介して接続される [1]。
+前後の宇宙の物理的計量 $g_{ab}^{-}, g_{ab}^{+}$ は、共通の共形計量 $\widetilde{g}_{ab}$ を介して接続される [1]。
 
 $$
 g^-_{ab} = \Omega_-^2 \widetilde{g}_{ab} \;(\Omega_-\to\infty),\qquad g^+_{ab} = \Omega_+^2 \widetilde{g}_{ab} \;(\Omega_+\to0)
@@ -242,4 +242,4 @@ CCCは、前の宇宙の痕跡がCMBに残ると予言し、前の宇宙の超�
 ---
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
-**最終更新 / Last updated**: 2026-11-06 JST
+**最終更新 / Last updated**: 2026-11-07 JST

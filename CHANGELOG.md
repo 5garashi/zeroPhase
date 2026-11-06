@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.0.0
+  版 / Version: 2.0.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,13 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.0.1 — 2026-11-07
+
+- 公開後に、文中数式（`$…$`）の5か所が Markdown として処理され、正しく描画されていないことを確認して直した。付録3（日英）の計量の添字が強調として解釈される箇所、本文 第4.4節（日英）の `\!` が消えて階乗の記号として表示される箇所、補足資料の縦棒が表として、括弧がリンクとして解釈される箇所。数学的内容は変更していない。
+  Fixed five inline math expressions that kramdown processed as Markdown after publication: subscripts parsed as emphasis in Appendix 3, a `\!` that turned into a factorial sign in Section 4.4 of the essay, and a bar and brackets in the supplementary notes parsed as a table and a link. The mathematical content is unchanged.
+- 同じ不具合を見つける `tools/check_math.py` を加えた。
+  Added `tools/check_math.py` to detect such expressions.
 
 ## 2.0.0 — 2026-11-07
 

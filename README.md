@@ -3,13 +3,13 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.0.0
+  版 / Version: 2.0.1
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 2.0.0([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 2.0.1([改版履歴 / Changelog](CHANGELOG.md))
 
 数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
 Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.
@@ -63,6 +63,7 @@ An essay that organizes the limits of an observer's ability to tell things apart
 | `CHANGELOG.md` | 改版履歴 / Revision history |
 | `TESTING.md` | 確認方法と結果 / Verification method and results |
 | `LICENSE` | 本文のライセンス(CC BY-ND 4.0) / License of the text |
+| `tools/check_math.py` | 文中数式（`$…$`）に、Markdown として処理されて壊れる書き方がないかを確かめる(MIT) / Finds inline math that the Markdown converter would break (MIT) |
 | `tools/check_version.py` | 本文の版が `VERSION` と一致するかを確かめる(Identity から写した MIT のツール) / Checks that the essay's version matches `VERSION` (MIT, copied from the Identity) |
 | `.github/workflows/` | 版を上げたときにタグと Release を作る・プルリクエストで版を確かめる(Identity のひな形、MIT) / Tags and releases on version changes, and checks versions on pull requests (Identity templates, MIT) |
 

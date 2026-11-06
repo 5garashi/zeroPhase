@@ -10,8 +10,8 @@ description: Fisher情報・量子Fisher情報・Bures距離と不確定性関�
   概要 / Description: 量子Fisher情報と不確定性関係、部分トレースによる観測可能性の低下の解説
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-05
-  最終更新 / Last updated: 2026-11-06 JST
-  版 / Version: 2.0.0
+  最終更新 / Last updated: 2026-11-07 JST
+  版 / Version: 2.0.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -19,7 +19,7 @@ description: Fisher情報・量子Fisher情報・Bures距離と不確定性関�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>2.0.0</span>　**更新日:** 2026-11-06 JST
+**版:** <span data-version>2.0.1</span>　**更新日:** 2026-11-07 JST
 
 [本文：観測限界と未分化の原点](../zerothOrderPhase.html) / [付録1：論理的背景](../appendix1.html) / [付録2：数式解説](../appendix2.html)
 
@@ -268,7 +268,7 @@ $$
 \operatorname{Var}(\widehat E) \ge \frac{1}{N F_Q\!\left[\rho_{\mathrm{obs}}\right](E)}
 $$
 
-となる。単一のパラメータでは、適切な測定を選べばこの下限に漸近的に届く。測定回数 $N$ を一定とすると、$F_Q\!\left[\rho_{\mathrm{obs}}\right](E) \rightarrow 0$ なら推定誤差の下限は限りなく大きくなる。
+となる。単一のパラメータでは、適切な測定を選べばこの下限に漸近的に届く。測定回数 $N$ を一定とすると、$F_Q[\rho_{\mathrm{obs}}]\,(E) \rightarrow 0$ なら推定誤差の下限は限りなく大きくなる。
 
 つまり観測者は、観測データから衝突エネルギー $E$ を推定できなくなる。
 
@@ -293,4 +293,4 @@ QFIは、パラメータの変化に対して量子状態がどれだけ敏感�
 ---
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
-**最終更新 / Last updated**: 2026-11-06 JST
+**最終更新 / Last updated**: 2026-11-07 JST

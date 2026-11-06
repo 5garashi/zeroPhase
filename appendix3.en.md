@@ -12,7 +12,7 @@ description: Building on the conformal connection of CCC and Penrose's argument 
   Author: 5garashi.com Design Office
   Created: 2026-11-07
   Last updated: 2026-11-07 JST
-  Version: 2.0.0
+  Version: 2.0.1
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -20,7 +20,7 @@ description: Building on the conformal connection of CCC and Penrose's argument 
 
 **Author:** 5garashi.com Design Office
 
-**Version:** <span data-version>2.0.0</span>　**Last updated:** 2026-11-07 JST
+**Version:** <span data-version>2.0.1</span>　**Last updated:** 2026-11-07 JST
 
 This appendix is a tentative proposal that regards the boundary at which universes are connected in conformal cyclic cosmology (CCC) as **the Zeroth-Order Phase, in which the observer cannot construct spacetime measurement standards**. It borrows from CCC the geometry of the conformal connection and Penrose's argument that "without rest mass, no clock can be built", and extends that argument to all physical quantities available to the observer. This essay does not aim to agree with every claim of CCC; it uses the parts that can be cited as footholds.
 
@@ -52,7 +52,7 @@ This is the basic form for treating $a\to0$ on the initial side and $a\to\infty$
 
 ### 2.2 Connecting Through a Common Geometry
 
-The physical metrics $g^-_{ab}, g^+_{ab}$ of the universes before and after are connected through a common conformal metric $\widetilde{g}_{ab}$ [1].
+The physical metrics $g_{ab}^{-}, g_{ab}^{+}$ of the universes before and after are connected through a common conformal metric $\widetilde{g}_{ab}$ [1].
 
 $$
 g^-_{ab} = \Omega_-^2 \widetilde{g}_{ab} \;(\Omega_-\to\infty),\qquad g^+_{ab} = \Omega_+^2 \widetilde{g}_{ab} \;(\Omega_+\to0)

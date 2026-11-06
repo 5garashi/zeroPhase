@@ -3,24 +3,26 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.3.1
+  版 / Version: 2.0.0
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 1.3.1([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 2.0.0([改版履歴 / Changelog](CHANGELOG.md))
 
 数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
 Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.
 
-適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.22.0（2026-11-04確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
+適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.23.0（2026-11-07確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
 
-日本語本文と英語本文の論旨は対応する。付録は日本語の補助文書として別に公開する。改訂していない英語本文の版は、最後に改訂した版を示す。本文の表示先はGitHub Pagesの公開ページを指定する（Identity 8-9 (9)）。GitHubのソース表示とmdEditorの互換確認は本版の対象外とし、公開ページの表示を確認する。
+2.0.0では、日本語本文・付録1〜3を改稿し、英語本文を訳し直して、付録1〜3の英語版を加えた。補足資料2つは日本語のみで公開する。本文の表示先はGitHub Pagesの公開ページを指定する（Identity 8-9 (9)）。
 
-量子測定の限界から宇宙論の極限までをたどり、対象を区別する基準そのものが意味を失う極限を「未分化の第零次相(Zeroth-Order Phase)」と仮称して考える試論です。定量的な予測を示す論文ではなく、思考実験として書いています。
+In 2.0.0, the Japanese essay and Appendices 1–3 were revised, the English essay was retranslated, and English editions of Appendices 1–3 were added. The two supplementary notes are published in Japanese only.
 
-An essay that follows measurement limits from quantum physics to the extremes of cosmology, tentatively naming the limit where the very criteria for telling things apart lose their meaning the "Zeroth-Order Phase". It is a thought experiment, not a paper with quantitative predictions.
+観測者が対象を区別できる限界を、時空限界相・次元縮減相・第零次相の三つの概念で整理する試論です。量子測定の限界から宇宙論の極限までをたどり、位置・距離・時間による区別そのものが成り立たなくなる状態を「未分化の第零次相(Zeroth-Order Phase)」と仮称して考えます。定量的な予測を示す論文ではなく、思考実験として書いています。
+
+An essay that organizes the limits of an observer's ability to tell things apart by three concepts: the Spacetime-Limit Phase, the Dimension-Reduction Phase, and the Zeroth-Order Phase. It follows measurement limits from quantum physics to the extremes of cosmology, and tentatively calls the state in which distinctions by position, distance, and time no longer hold the "Zeroth-Order Phase". It is a thought experiment, not a paper with quantitative predictions.
 
 **本文を読む / Read the essay**
 
@@ -30,34 +32,45 @@ An essay that follows measurement limits from quantum physics to the extremes of
 
 ## 内容 / Contents
 
-1. 確率的識別限界と標準量子限界 / Probabilistic discrimination and the standard quantum limit
-2. 局在限界と時空描像の限界(プランク長、時空の泡、高エネルギー散乱と量子 Fisher 情報) / Localization limits and the limits of the spacetime picture
-3. 宇宙論的極限(宇宙マイクロ波背景放射、熱死、共形サイクリック宇宙論) / Indistinguishability at cosmological limits
-4. 四つの極限と「未分化の第零次相」の提案 / Four limits and the proposed Zeroth-Order Phase
-5. 結論と展望 / Conclusion
+1. 時空限界相：対象を区別する能力の限界 / The Spacetime-Limit Phase
+2. 次元縮減相への接続：局在と観測可能な自由度 / Toward the Dimension-Reduction Phase
+3. 宇宙論的極限における区別不能性 / Indistinguishability at cosmological limits
+4. 三相をつなぐ試論：四つの極限から第零次相へ / From four limits to the Zeroth-Order Phase
+5. 結論と展望 / Conclusion and outlook
+6. 本試論の主張の確かさについて / On the status of the claims
 
-## 付録
+## 付録 / Appendices
 
-- [付録1：観測限界を整理する三相モデルの論理的背景](https://5garashi.github.io/zeroPhase/appendix1.html)
-- [付録2：観測限界と識別可能性の数式解説](https://5garashi.github.io/zeroPhase/appendix2.html)
+| 付録 / Appendix | 日本語 / Japanese | English |
+| :--- | :--- | :--- |
+| 1. 三相モデルの論理的背景 / Logical background of the three-phase model | [appendix1](https://5garashi.github.io/zeroPhase/appendix1.html) | [appendix1.en](https://5garashi.github.io/zeroPhase/appendix1.en.html) |
+| 2. 観測限界と識別可能性の数式解説 / Mathematical notes | [appendix2](https://5garashi.github.io/zeroPhase/appendix2.html) | [appendix2.en](https://5garashi.github.io/zeroPhase/appendix2.en.html) |
+| 3. CCCの接続境界と第零次相 / The CCC connecting boundary and the Zeroth-Order Phase | [appendix3](https://5garashi.github.io/zeroPhase/appendix3.html) | [appendix3.en](https://5garashi.github.io/zeroPhase/appendix3.en.html) |
+
+補足資料（日本語のみ） / Supplementary notes (Japanese only):
+
+- [量子Fisher情報（QFI）から見る情報散逸と観測可能性](https://5garashi.github.io/zeroPhase/補足資料/QFI解説.html)
+- [遠方の観測と区別の難しさ（第3節の解説）](https://5garashi.github.io/zeroPhase/補足資料/宇宙論的極限の解説.html)
 
 ## ファイル / Files
 
 | ファイル / File | 内容 / Contents |
 | :--- | :--- |
-| `zerothOrderPhase.md` / `zerothOrderPhase.en.md` | 日本語版 / English essay |
-| `appendix1.md` / `appendix2.md` | 三相モデルの論理的背景 / 数式解説 |
+| `zerothOrderPhase.md` / `zerothOrderPhase.en.md` | 本文の日本語版 / English essay |
+| `appendix1.md`〜`appendix3.md` / `appendix1.en.md`〜`appendix3.en.md` | 付録の日本語版 / English appendices |
+| `補足資料/` | 補足資料（日本語） / Supplementary notes (Japanese) |
 | `VERSION` | 版の番号(Identity 12-7) / Version number |
 | `CHANGELOG.md` | 改版履歴 / Revision history |
+| `TESTING.md` | 確認方法と結果 / Verification method and results |
 | `LICENSE` | 本文のライセンス(CC BY-ND 4.0) / License of the text |
 | `tools/check_version.py` | 本文の版が `VERSION` と一致するかを確かめる(Identity から写した MIT のツール) / Checks that the essay's version matches `VERSION` (MIT, copied from the Identity) |
 | `.github/workflows/` | 版を上げたときにタグと Release を作る・プルリクエストで版を確かめる(Identity のひな形、MIT) / Tags and releases on version changes, and checks versions on pull requests (Identity templates, MIT) |
 
 ## 改版のしかた / How to revise
 
-1. 日本語本文を改訂し、英語本文の章・段落・数式・引用と意味を合わせる。 / Revise the Japanese essay and align the English sections, paragraphs, equations, citations, and meaning.
+1. 日本語の本文と付録を改訂し、英語版の章・段落・数式・引用と意味を合わせる。 / Revise the Japanese essay and appendices, and align the English sections, paragraphs, equations, citations, and meaning.
 2. 内容が変わるときは `VERSION` を上げ、`CHANGELOG.md` に節を足し、この README の版の行を直す(Identity 12-7 (10))。 / When the content changes, raise `VERSION`, add a `CHANGELOG.md` section, and update the version line above.
-3. `python tools/check_version.py --stamp zerothOrderPhase.md zerothOrderPhase.en.md README.md CHANGELOG.md TESTING.md` で今回改訂した文書に版を書き込み、`python tools/check_version.py` で確かめる。改訂しない文書のヘッダーには、最後に改訂した版を残す。
+3. `python tools/check_version.py --stamp <改訂したファイル>` で今回改訂した文書に版を書き込み、`python tools/check_version.py` で確かめる。改訂しない文書のヘッダーには、最後に改訂した版を残す。 / Stamp the revised files with `--stamp` and check with `python tools/check_version.py`.
 4. main に push すると、`vX.Y.Z` のタグと GitHub の Release が作られる。 / Pushing to main creates the `vX.Y.Z` tag and a GitHub Release.
 
 ## ライセンス / License
@@ -71,7 +84,4 @@ Copyright © 2026 5garashi.com設計事務所 / 5garashi.com Design Office
 ---
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
-**最終更新 / Last updated**: 2026-11-04 JST
-
-
-
+**最終更新 / Last updated**: 2026-11-07 JST

@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 1.3.1
+  版 / Version: 2.0.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,45 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.0.0 — 2026-11-07
+
+- 有効次元を、観測者が利用できる測定の量子Fisher情報行列の固有値から定義し直した。測定回数と分解能のもとで連続的に変わり、測定回数を限りなく増やすと行列のランクに一致する。付録1・付録3の二つの定義を一つにまとめた。有限回数の有効次元は各方向をどれだけ読み取れるかの補助指標とし、三相の区分は、ある範囲で一定のランクで行う。ある範囲の全体で感度がゼロの方向では、状態が厳密に区別できないことを示した。
+  Redefined the effective dimension from the eigenvalues of the quantum Fisher information matrix of the measurements available to the observer. It varies continuously with the number of measurements and the resolution, and reduces to the matrix rank in the limit of unlimited measurements, unifying the definitions in Appendices 1 and 3. The finite-measurement effective dimension is an auxiliary indicator; the three phases are classified by the rank over a region, and directions with zero sensitivity over a whole region are shown to be strictly indistinguishable.
+- 観測者にとっての区別を、観測量の集まり（代数的場の量子論の考え方）で定義した。付録1に主な記号の表を加えた。
+  Defined indistinguishability for an observer through the set of available observables, following algebraic quantum field theory, and added a table of the main symbols to Appendix 1.
+- 付録3に、ペンローズの「静止質量がなければ時計がない」という議論を、次元を持つすべての物理量へ広げる節と、CCCの痕跡（ホーキング点）と第零次相の関係を説明する節を加えた。
+  Appendix 3 extends Penrose's argument that there are no clocks without rest mass to all dimensionful quantities, and explains how the predicted CCC traces (Hawking points) relate to the Zeroth-Order Phase.
+- 本文 第3節に、宇宙論の極限で区別が難しくなる理由と失われる理由を数式で加えた（角径距離、光子の数の流れ、光学的厚さによる全変動距離の上限、宇宙分散、静止質量と時計、事象の地平線とその温度）。光源が一つか二つかの識別を量子チェルノフ指数で表し、観測者の資源（口径・時間・エネルギー・記録の容量）に原理的な上限があることを第4.2節に加えた。
+  Section 3 of the essay now shows by equations why distinctions become harder or are lost in the cosmological limits, expresses one-versus-two source discrimination by the quantum Chernoff exponent, and Section 4.2 adds the upper limits in principle on the observer's resources.
+- 本文 第2.1節に、スペクトル次元の結果を次元縮減相を考える先行例として加え、距離とともに積み重なる時空の揺らぎの説とその観測による制限を加えた。CKNスケーリング・エントロピー限界と三相の関係を説明し、主張の確かさを本文の末尾の一つの節にまとめた。
+  Section 2.1 cites spectral-dimension results as precedents and adds the proposal that spacetime fluctuations accumulate with distance, with its observational constraints. The essay explains the relation of CKN scaling and entropy bounds to the three phases and gathers the status of its claims in one closing section.
+- 本文を短くし、三相の概念遷移図と比較表を序章に加えた。図3つと表を加えた。
+  Shortened the essay and added figures and tables, including a transition diagram and comparison table of the three phases.
+- 補足資料「QFI解説」と「遠方の観測と区別の難しさ（第3節の解説）」を加えた（日本語）。
+  Added two supplementary notes in Japanese: on the QFI, and a question-and-answer guide to Section 3.
+- 英語本文を2.0.0の内容で訳し直し、付録1〜3の英語版を新しく作った。付録のページに、本文と対応する言語の版へのリンクを付けた。
+  Retranslated the English essay from the 2.0.0 Japanese text and added English editions of Appendices 1–3. Appendix pages now link to the essay and to their counterpart in the other language.
+- 誤記を修正した（簡体字の混入、成功確率の記号、表の中のノルム記号、未定義の距離 d、付録の節番号の参照）。SQLの文献を Braginsky–Khalili とし、Yuen の論文を収縮状態の文献として引き直した。
+  Corrected typos and notation, defined the distance d, fixed appendix section references, and cited Braginsky–Khalili for the SQL and Yuen for contractive states.
+- 1.5.0（未公開）の付録3の追加を含む。
+  Includes the addition of Appendix 3 from the unpublished 1.5.0.
+
+## 1.5.0 — 2026-11-05（未公開 / not published）
+
+この版はタグと Release を作らず、内容は 2.0.0 に含めて公開した。
+This version was not tagged or released; its content was published as part of 2.0.0.
+
+- 付録3を追加。CCCの接続境界を、時空的測定基準を構成できない第零次相と捉える仮説を整理した。
+- 共形接続、観測上の一様性、時空的識別の構成、Fisher情報による縮減の例を説明した。CCCの既存の主張と本試論の追加仮説を分けた。
+- 日本語本文とREADMEに付録3へのリンクを追加した。英語本文は変更していない。
+
+## 1.4.0 — 2026-11-05
+
+- 日本語本文を、時空限界相・次元縮減相・第零次相の接続を中心とする試論へ改稿した。第零次相を従来の時空的識別の限界と定義し、情報が相関に隠れる状態、共形・因果構造が残る状態、関係的記述で区別できる状態を対象外とした。
+- 数式の詳しい条件は付録へ委ね、本文の留保の反復を減らした。QFIの比較対象、CKNの単位系、状態数を読む前提を明記した。
+- 付録1の本文との関係を更新した。付録2と英語本文は改訂していない。
+- 原稿の確認結果と、公開表示・外部レビューの未実施範囲はTESTING.mdに記録する。
 
 ## 1.3.1 — 2026-11-04
 

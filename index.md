@@ -13,3 +13,14 @@ This essay follows measurement limits from quantum physics to the extremes of co
 
 - [日本語 / Japanese](zerothOrderPhase.html)
 - [English](zerothOrderPhase.en.html)
+
+## 付録 / Appendices
+
+- 付録1：三相モデルの論理的背景 — [日本語](appendix1.html) / [English](appendix1.en.html)
+- 付録2：観測限界と識別可能性の数式解説 — [日本語](appendix2.html) / [English](appendix2.en.html)
+- 付録3：CCCの接続境界と第零次相 — [日本語](appendix3.html) / [English](appendix3.en.html)
+
+## 補足資料（日本語） / Supplementary notes (Japanese)
+
+- [量子Fisher情報（QFI）から見る情報散逸と観測可能性](補足資料/QFI解説.html)
+- [遠方の観測と区別の難しさ（第3節の解説）](補足資料/宇宙論的極限の解説.html)

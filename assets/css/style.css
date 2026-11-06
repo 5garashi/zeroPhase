@@ -100,6 +100,12 @@ a:focus-visible {
   height: auto;
 }
 
+.language-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .language-nav a {
   display: inline-flex;
   min-width: 5.5rem;

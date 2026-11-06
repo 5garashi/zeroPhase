@@ -5,6 +5,6 @@
 # ライセンス / License: MIT
 # SPDX-License-Identifier: MIT
 
-# 下書き(手元にだけ残す) / Drafts, kept locally only
-/old/
+# 手元にだけ残すもの(下書き・改版案・古い版) / Kept locally only (drafts, revision proposals, old versions)
+/local/
 __pycache__/

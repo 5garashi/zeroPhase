@@ -9,6 +9,7 @@ SPDX-License-Identifier: MIT
 
 使い方 / Usage:
     python tools/check_math.py            # 公開する Markdown をすべて確かめる / check every published Markdown file
+    python tools/check_math.py --self-test  # 過去の不具合の例集で、検査そのものを確かめる / test the checker on past defects
 
 背景 / Background:
     kramdown は $$…$$ だけを数式として扱い、$…$ の中は普通の文として処理する。
@@ -67,7 +68,52 @@ def check(path: pathlib.Path):
     return problems
 
 
+# 過去に公開ページで崩れた書き方(must_fail)と、直した書き方・崩れないと確かめた書き方(must_pass)の例集
+# Corpus of past defects (must_fail) and their fixes or verified-safe forms (must_pass)
+CORPUS = {
+    "must_fail": [
+        # 1.3.1 付録2: 縦棒が表として解釈された / bars parsed as a table
+        "ケット $|0\\rangle$ と $|1\\rangle$ を考える。",
+        # 2.0.0 付録3: 添字が強調として解釈された / subscripts parsed as emphasis
+        "物理的計量 $g^-_{ab}, g^+_{ab}$ は、共通の共形計量 $\\widetilde{g}_{ab}$ を介して",
+        # 2.0.0 本文 4.4: \! が消えて ! (階乗)になった / \\! became a factorial sign
+        "状態の数は $N \\le \\exp\\!\\left(A/4l_P^2\\right)$ と読める。",
+        # 2.0.0 QFI解説: ]( がリンクとして解釈された / ]( parsed as a link
+        "$F_Q\\!\\left[\\rho_{\\mathrm{obs}}\\right](E) \\rightarrow 0$ なら",
+    ],
+    "must_pass": [
+        "ケット $\\vert0\\rangle$ と $\\vert1\\rangle$ を考える。",
+        "物理的計量 $g_{ab}^{-}, g_{ab}^{+}$ は、共通の共形計量 $\\widetilde{g}_{ab}$ を介して",
+        "状態の数は $N \\le \\exp\\left(A/4l_P^2\\right)$ と読める。",
+        "$F_Q[\\rho_{\\mathrm{obs}}]\\,(E) \\rightarrow 0$ なら",
+        # 段落に一つだけの _ と、]( にならない括弧は崩れないことを公開ページで確かめた
+        "部分系 $\\rho_{\\mathrm{obs}} = \\operatorname{Tr}_{\\mathrm{unobs}}\\rho$ について",
+        "$N\\le\\exp[A/(4l_P^2)]$ と表す。",
+    ],
+}
+
+
+def self_test() -> int:
+    import tempfile
+    failures = 0
+    with tempfile.TemporaryDirectory() as d:
+        for kind, samples in CORPUS.items():
+            for s in samples:
+                p = pathlib.Path(d) / "sample.md"
+                p.write_text(s + "\n", encoding="utf-8")
+                found = bool(check(p))
+                ok = found if kind == "must_fail" else not found
+                if not ok:
+                    failures += 1
+                    print(f"自己試験の失敗 / self-test failed ({kind}): {s}")
+    total = sum(len(v) for v in CORPUS.values())
+    print(f"self-test: {total - failures}/{total} passed")
+    return 1 if failures else 0
+
+
 def main() -> int:
+    if "--self-test" in sys.argv[1:]:
+        return self_test()
     files = []
     for p in sorted(ROOT.rglob("*.md")):
         rel = p.relative_to(ROOT).as_posix()

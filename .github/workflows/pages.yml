@@ -23,6 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check inline math that kramdown would break
+        run: |
+          python3 tools/check_math.py --self-test
+          python3 tools/check_math.py
       - uses: actions/configure-pages@v5
       - uses: actions/jekyll-build-pages@v1
         with:

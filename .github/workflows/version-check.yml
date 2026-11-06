@@ -46,3 +46,7 @@ jobs:
             exit 1
           fi
           echo "VERSION, CHANGELOG.md, and README.md agree on $v."
+      - name: Check inline math that kramdown would break
+        run: |
+          python3 tools/check_math.py --self-test
+          python3 tools/check_math.py

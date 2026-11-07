@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.0.1
+  版 / Version: 2.0.2
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,13 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.0.2 — 2026-11-07
+
+- 各ページに Open Graph のタグ（og:title・og:description・og:url・og:image・og:locale）と twitter:card を加えた。URL を X・LinkedIn などに貼ったとき、タイトル・説明・画像が出るようにした。本文の内容は変えていない。共有用の画像は `assets/ogp/zeroPhase-ogp.png`（1200×630）。
+  Added Open Graph tags (og:title, og:description, og:url, og:image, og:locale) and twitter:card to every page, so that a title, description, and image appear when a URL is shared on X, LinkedIn, and other services. The essay content is unchanged. The sharing image is `assets/ogp/zeroPhase-ogp.png` (1200×630).
+- 適用する Design Office Identity の版を 4.23.0 から 4.25.0 に改めた（README・TESTING.md）。4.24.0 と 4.25.0 の変更のうち、本文の書き方に関係する GitHub 対応の記法（8-9 (10)）は、既存の検査 `tools/check_math.py` で確かめた。
+  Updated the applied Design Office Identity version from 4.23.0 to 4.25.0 (README and TESTING.md). For the changes in 4.24.0 and 4.25.0, the notation rule for GitHub (8-9 (10)) that bears on the essay's writing was checked with the existing `tools/check_math.py`.
 
 ## 2.0.1 — 2026-11-07
 

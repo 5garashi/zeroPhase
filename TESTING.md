@@ -37,7 +37,7 @@
 | 英訳の見直し（別AI） | 合格（指摘に対応） | 共通ルールの道具で Copilot に依頼した（2026-11-08）。採用：「別の AI」を訳した AI とは別と分かるように（an AI other than the one that translated it）、「確認作業」を check the work から carry out checks に、「内容の判断と責任」を made the judgments on the content and is responsible for it に、主語を Generative AI tools に。採用しなかったもの：solely の付け足し（原文にない）、見出しを Disclosure of AI Use に変える案（現行で誤りなしとの評価） |
 | 文中数式 | 合格 | `python tools/check_math.py --self-test` は 10/10、`python tools/check_math.py` は 11 文書で問題 0 |
 | 版・ヘッダー | 合格 | `python tools/check_version.py` で VERSION 2.0.3 と改訂ファイル（本文の日英・README・CHANGELOG・TESTING.md）の版、本文の data-version の一致を確認。付録・補足資料は改訂していないため、前の版のまま |
-| 公開ページの表示 | 未実施 | 公開後に、日英の本文で節が参考文献の前に出ること、版が 2.0.3 であることを確かめる |
+| 公開ページの表示 | 合格（確認範囲内） | 公開後（Pages の配布と v2.0.3 のタグ・Release の作成は成功）、日英の本文の HTML を読み、版の表示が 2.0.3、見出しの並びが「付録構成 → AI 支援の開示 → 参考文献」（英語版は Appendices → Disclosure of AI Assistance → References）、開示の文がソースと同じであることを確認した。目視と幅 320px での表示は確かめていない |
 | PDF・紙面 | 未実施 | Zenodo に PDF を置く前に、開示の節が PDF に入ることを含めて確かめる |
 | 夜・強制カラー・200%拡大・読み上げ | 未実施 | 前版の未実施範囲を引き継ぐ。本版で表示のスタイルは変えていない |
 

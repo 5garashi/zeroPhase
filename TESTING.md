@@ -21,10 +21,27 @@
 | 英訳 | 別のAIによる訳の見直し（共通ルール「ほかの AI に見てもらう」）。指摘ごとの対応を記録する |
 | 図（本文に直接書くSVG） | 文字色だけで描くこと、title・desc、幅248px・360pxでの文字のはみ出しと重なり（Edgeのヘッドレス表示） |
 | 版・署名 | VERSION、改訂したファイルのヘッダー、本文の版、README、CHANGELOGの一致 |
+| 共有時の表示（OGP） | レイアウトの og:・twitter:card のタグ、共有画像（1200×630）の配信、公開後のページごとの og:title・og:url・og:locale。X・LinkedInのカード表示は投稿前に別に確かめる |
 | レイアウト・CSS | 公開ページの通常幅と320px幅、数式と表の収まり、本文への移動、色と本文の太さ |
 | 印刷 | 白背景を指定するCSSを確認。実際のPDF・紙面は別途確認する |
 
 独立数式は公開前の原稿と比較する。本文の数式表現を変える場合は意味も別にレビューする。文中数式は `python tools/check_math.py` で、Markdown として処理されて壊れる書き方（縦棒、`](`、バックスラッシュの後の記号、一つの段落で強調になる `_`）がないことを確かめる。この検査は、過去の不具合の例集による自己試験（`--self-test`）とともに、Pagesの配布の前とプルリクエストでGitHub Actionsが自動で動かし、問題があれば公開しない。新しい崩れを見つけたら、例集（`CORPUS`）に足す。公開後は、各ページで描画されずに残った `$` がないことも確かめる。版は `python tools/check_version.py` で確認し、個々の改訂文書のヘッダーも読む。
+
+## 2.0.2の確認（2026-11-07）
+
+確認者：Claude。全ページに OGP タグと twitter:card を加え、適用する Identity を 4.25.0 に改めた。本文・付録の内容は変えていない。
+
+| 項目 | 判定 | 根拠・範囲 |
+|---|---|---|
+| 文中数式 | 合格 | `python tools/check_math.py --self-test` は 10/10、`python tools/check_math.py` は 11 文書で問題 0 |
+| 版・ヘッダー | 合格 | `python tools/check_version.py` は VERSION 2.0.2 と改訂ファイル（CHANGELOG・README・TESTING.md・_layouts/default.html）の版の一致を確認。本文・付録の版は改訂していないため、2.0.0・2.0.1 のまま |
+| 公開後の OGP タグ | 合格（確認範囲内） | 公開後（Pages の配布完了を確かめてから）、日本語トップ・英語本文（`zerothOrderPhase.en.html`）・付録3の HTML を読み、og:title・og:description・og:url・og:image・og:locale（ja_JP・en_US）・twitter:card を確認。og:url・og:image は各ページの絶対 URL |
+| 共有画像 | 合格（確認範囲内） | `assets/ogp/zeroPhase-ogp.png` は 1200×630 の PNG。公開先で 200、image/png。作成時に目視し、文字の欠けと枠内の収まりを確認。色は `assets/css/style.css` の変数（昼の配色）と同じ |
+| X・LinkedIn のカード表示 | 未実施 | 各サービスのプレビューで、投稿前に確かめる（所有者の画面） |
+| Jekyll のビルド結果 | 公開後の確認で代える | ローカルに Jekyll がないため、Pages の配布（GitHub Actions）の成否と、公開 HTML の内容で確かめた |
+| 補足資料・付録 1〜2 の OGP | 未確認 | 同じレイアウトを使うため同じタグが出る想定。公開 HTML は確認していない |
+| Website 欄（リポジトリ設定） | 未実施 | 設定の変更で、gh の認証が要る。本文の表示とは別の確認 |
+| 夜・強制カラー・200%拡大・読み上げ・印刷 | 未実施 | 前版の未実施範囲を引き継ぐ。本版で表示のスタイルは変えていない |
 
 ## 2.0.1の確認（2026-11-07）
 

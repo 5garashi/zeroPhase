@@ -3,7 +3,7 @@
   概要 / Description: 日本語版・英語版の文書とWeb表示の確認方法・確認記録
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-04
-  版 / Version: 2.0.2
+  版 / Version: 2.0.3
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -26,6 +26,20 @@
 | 印刷 | 白背景を指定するCSSを確認。実際のPDF・紙面は別途確認する |
 
 独立数式は公開前の原稿と比較する。本文の数式表現を変える場合は意味も別にレビューする。文中数式は `python tools/check_math.py` で、Markdown として処理されて壊れる書き方（縦棒、`](`、バックスラッシュの後の記号、一つの段落で強調になる `_`）がないことを確かめる。この検査は、過去の不具合の例集による自己試験（`--self-test`）とともに、Pagesの配布の前とプルリクエストでGitHub Actionsが自動で動かし、問題があれば公開しない。新しい崩れを見つけたら、例集（`CORPUS`）に足す。公開後は、各ページで描画されずに残った `$` がないことも確かめる。版は `python tools/check_version.py` で確認し、個々の改訂文書のヘッダーも読む。
+
+## 2.0.3の確認（2026-11-08）
+
+確認者：Claude。日英の本文の参考文献の前と README に「AI 支援の開示」の節を加えた。付録・補足資料・レイアウト（フッター）には入れていない（作成者の指定）。
+
+| 項目 | 判定 | 根拠・範囲 |
+|---|---|---|
+| 開示の文の確認 | 合格 | 日本語の文は Zenn の記事（`articles/zerophase-observation-limits.md` の「AI 支援の開示」）と同じ。用いた AI の名前は、TESTING.md の確認者と英訳の見直しの記録に合う |
+| 英訳の見直し（別AI） | 合格（指摘に対応） | 共通ルールの道具で Copilot に依頼した（2026-11-08）。採用：「別の AI」を訳した AI とは別と分かるように（an AI other than the one that translated it）、「確認作業」を check the work から carry out checks に、「内容の判断と責任」を made the judgments on the content and is responsible for it に、主語を Generative AI tools に。採用しなかったもの：solely の付け足し（原文にない）、見出しを Disclosure of AI Use に変える案（現行で誤りなしとの評価） |
+| 文中数式 | 合格 | `python tools/check_math.py --self-test` は 10/10、`python tools/check_math.py` は 11 文書で問題 0 |
+| 版・ヘッダー | 合格 | `python tools/check_version.py` で VERSION 2.0.3 と改訂ファイル（本文の日英・README・CHANGELOG・TESTING.md）の版、本文の data-version の一致を確認。付録・補足資料は改訂していないため、前の版のまま |
+| 公開ページの表示 | 未実施 | 公開後に、日英の本文で節が参考文献の前に出ること、版が 2.0.3 であることを確かめる |
+| PDF・紙面 | 未実施 | Zenodo に PDF を置く前に、開示の節が PDF に入ることを含めて確かめる |
+| 夜・強制カラー・200%拡大・読み上げ | 未実施 | 前版の未実施範囲を引き継ぐ。本版で表示のスタイルは変えていない |
 
 ## 2.0.2の確認（2026-11-07）
 

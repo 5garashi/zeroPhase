@@ -9,8 +9,8 @@ description: 時空限界相・次元縮減相・第零次相を通じて、量�
   概要 / Description: 観測限界と未分化の原点 —— 量子測定から宇宙論へ至る認識論的思索
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-28
-  最終更新 / Last updated: 2026-11-07 JST
-  版 / Version: 2.0.1
+  最終更新 / Last updated: 2026-11-08 JST
+  版 / Version: 2.0.3
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,7 @@ description: 時空限界相・次元縮減相・第零次相を通じて、量�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>2.0.1</span>　**更新日:** 2026-11-07 JST
+**版:** <span data-version>2.0.3</span>　**更新日:** 2026-11-08 JST
 
 ---
 
@@ -371,6 +371,12 @@ $$
 
 ---
 
+## AI 支援の開示
+
+本文の執筆と改稿、英語版の訳、図の作成、確認作業に、生成 AI（Claude・Codex・GitHub Copilot など）を使いました。英語版の見直しには、別の AI を使っています。内容の判断と責任は、5garashi.com設計事務所が負います。
+
+---
+
 ## 参考文献
 
 1. IBM Quantum Learning, "Quantum state discrimination and tomography".
@@ -403,4 +409,4 @@ $$
 ---
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
-**最終更新 / Last updated**: 2026-11-07 JST
+**最終更新 / Last updated**: 2026-11-08 JST

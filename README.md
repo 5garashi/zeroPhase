@@ -3,18 +3,18 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.0.2
+  版 / Version: 2.0.3
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 2.0.2([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 2.0.3([改版履歴 / Changelog](CHANGELOG.md))
 
 数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
 Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.
 
-適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.25.0（2026-11-07確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
+適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.25.0（2026-11-08確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
 
 2.0.0では、日本語本文・付録1〜3を改稿し、英語本文を訳し直して、付録1〜3の英語版を加えた。補足資料2つは日本語のみで公開する。本文の表示先はGitHub Pagesの公開ページを指定する（Identity 8-9 (9)）。
 
@@ -74,6 +74,12 @@ An essay that organizes the limits of an observer's ability to tell things apart
 3. `python tools/check_version.py --stamp <改訂したファイル>` で今回改訂した文書に版を書き込み、`python tools/check_version.py` で確かめる。改訂しない文書のヘッダーには、最後に改訂した版を残す。 / Stamp the revised files with `--stamp` and check with `python tools/check_version.py`.
 4. main に push すると、`vX.Y.Z` のタグと GitHub の Release が作られる。 / Pushing to main creates the `vX.Y.Z` tag and a GitHub Release.
 
+## AI 支援の開示 / Disclosure of AI assistance
+
+本文の執筆と改稿、英語版の訳、図の作成、確認作業に、生成 AI（Claude・Codex・GitHub Copilot など）を使いました。英語版の見直しには、別の AI を使っています。内容の判断と責任は、5garashi.com設計事務所が負います。
+
+Generative AI tools (Claude, Codex, GitHub Copilot, and others) were used to draft and revise the text, translate it into English, create the figures, and carry out checks. The English translation was reviewed by an AI other than the one that translated it. 5garashi.com Design Office made the judgments on the content and is responsible for it.
+
 ## ライセンス / License
 
 本文は [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.ja)(表示 - 改変禁止 4.0 国際)で提供します。出典(5garashi.com設計事務所)を示せば、商用を含めて共有・転載できます。改変したものの配布はできません。`tools/` と `.github/workflows/` は MIT License です(各ファイルのヘッダーによる)。
@@ -85,4 +91,4 @@ Copyright © 2026 5garashi.com設計事務所 / 5garashi.com Design Office
 ---
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
-**最終更新 / Last updated**: 2026-11-07 JST
+**最終更新 / Last updated**: 2026-11-08 JST

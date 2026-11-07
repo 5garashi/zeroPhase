@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.0.2
+  版 / Version: 2.0.3
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,11 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.0.3 — 2026-11-08
+
+- 日英の本文の参考文献の前と README に「AI 支援の開示」の節を加え、執筆・改稿・英訳・図の作成・確認に生成 AI を使ったことと、内容の判断と責任が 5garashi.com設計事務所にあることを示した。日本語の文は Zenn の記事と同じ。論旨と数式は変えていない。
+  Added a "Disclosure of AI Assistance" section before the references in the Japanese and English essays and in the README, stating that generative AI was used for drafting, revision, translation, figures, and checks, and that 5garashi.com Design Office made the judgments on the content and is responsible for it. The Japanese text matches the Zenn article. The argument and the equations are unchanged.
 
 ## 2.0.2 — 2026-11-07
 

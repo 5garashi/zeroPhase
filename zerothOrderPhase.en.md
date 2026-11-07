@@ -9,8 +9,8 @@ description: An exploratory essay on the limits of discrimination in quantum mea
   Description: Observation limits and the undifferentiated origin: an English translation of the Japanese essay
   Author: 5garashi.com Design Office
   Created: 2026-10-31
-  Last updated: 2026-11-07 JST
-  Version: 2.0.1
+  Last updated: 2026-11-08 JST
+  Version: 2.0.3
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,7 @@ description: An exploratory essay on the limits of discrimination in quantum mea
 
 **Author:** 5garashi.com Design Office
 
-**Version:** <span data-version>2.0.1</span>　**Last updated:** 2026-11-07 JST
+**Version:** <span data-version>2.0.3</span>　**Last updated:** 2026-11-08 JST
 
 ---
 
@@ -373,6 +373,12 @@ To keep the argument clear, caveats in the main text have been kept to a minimum
 
 ---
 
+## Disclosure of AI Assistance
+
+Generative AI tools (Claude, Codex, GitHub Copilot, and others) were used to draft and revise the text, translate it into English, create the figures, and carry out checks. The English translation was reviewed by an AI other than the one that translated it. 5garashi.com Design Office made the judgments on the content and is responsible for it.
+
+---
+
 ## References
 
 1. IBM Quantum Learning, "Quantum state discrimination and tomography".
@@ -405,4 +411,4 @@ To keep the argument clear, caveats in the main text have been kept to a minimum
 ---
 
 **Author**: 5garashi.com Design Office  
-**Last updated**: 2026-11-07 JST
+**Last updated**: 2026-11-08 JST

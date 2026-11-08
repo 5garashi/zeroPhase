@@ -39,7 +39,7 @@
 | 文献の書誌 | 合格 | Petz（Linear Algebra Appl. 244, 81-96 (1996)、DOI 10.1016/0024-3795(94)00211-8）と Chentsov（Translations of Mathematical Monographs 53, AMS, 1982）を検索で確かめた（MaRDI の書誌、CiNii の書誌） |
 | 文中数式 | 合格 | `python tools/check_math.py --self-test` は 10/10、`python tools/check_math.py` は 11 文書で問題 0。日英の独立数式の区切りの数は同じ（本文 各36、付録1 各8） |
 | 版・ヘッダー | 合格 | `python tools/check_version.py` で VERSION 2.2.0 と改訂ファイル（本文の日英・付録1の日英・README・CHANGELOG・TESTING.md）の版、本文と付録1の data-version の一致を確認。付録2・3と補足資料は改訂していないため、前の版のまま |
-| 公開ページの表示 | 未実施 | 公開（main への取り込みと Pages の配布）の後に確かめる |
+| 公開ページの表示 | 合格（確認範囲内） | 公開後（PR #2 の検査、Pages の配布、v2.2.0 のタグ・Release の作成は成功）、Edgeのヘッドレス表示で日英の本文と付録1の日英を読み込んだ。4ページとも版は2.2.0、MathJaxのエラー0、描画されずに残った `$` は0、数式の数は本文 各221・付録1 各119。本文に査読についての1行、本文と付録1に Chentsov・Petz・SLD の記述があることを確かめた |
 | 夜・強制カラー・200%拡大・読み上げ・印刷 | 未実施 | 前版の未実施範囲を引き継ぐ。表示のスタイルは変えていない |
 
 ## 2.1.0の確認（2026-11-08）

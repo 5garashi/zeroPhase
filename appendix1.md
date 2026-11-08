@@ -11,8 +11,8 @@ description: 既存理論・認識論的定義・独自仮説を分け、観測�
   概要 / Description: 三相モデルの定義、観測者による区別と有効次元の定義、論理的背景
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-04
-  最終更新 / Last updated: 2026-11-07 JST
-  版 / Version: 2.0.0
+  最終更新 / Last updated: 2026-11-08 JST
+  版 / Version: 2.2.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -20,7 +20,7 @@ description: 既存理論・認識論的定義・独自仮説を分け、観測�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>2.0.0</span>　**更新日:** 2026-11-07 JST
+**版:** <span data-version>2.2.0</span>　**更新日:** 2026-11-08 JST
 
 本付録は、観測者にとっての識別可能性を「時空限界相・次元縮減相・第零次相」という三つの概念で整理する論理的枠組みを示す。既存理論が示す制約、認識論的定義、独自仮説の境界を切り分け、観測者による区別と有効次元を測定の言葉で定義する。
 
@@ -32,7 +32,7 @@ description: 既存理論・認識論的定義・独自仮説を分け、観測�
 
 | 区分 | 内容 | 本試論での論理的役割 |
 |---|---|---|
-| **既存理論の制約** | 不確定性関係、自由波束の分散、部分トレース、QFIの単調性、ホログラフィック限界など | 指定された物理条件下で、観測量や局在に生じる具体的制限を示す |
+| **既存理論の制約** | 不確定性関係、自由波束の分散、部分トレース、QFIの単調性 [6, 7]、ホログラフィック限界など | 指定された物理条件下で、観測量や局在に生じる具体的制限を示す |
 | **認識論的定義** | 利用可能なあらゆる観測で原理的に識別できない差異は、その観測者の記述において物理的区別と扱わない | 何をもって物理的区別・状態の差異と呼ぶかの規約を定める |
 | **独自仮説** | 識別を支える自由度・尺度・有効次元が変容し、最終的に識別基準自体が失われる | 時空限界相から次元縮減相を経て第零次相に至る接続モデルを提案する |
 
@@ -83,7 +83,7 @@ $\mathcal A_O$ は、手元の装置ではなく原理的に利用できる測�
 
 **(1) パラメータと状態族。** 観測者が出来事に割り当てる時空のパラメータを $q=(q^0,q^1,q^2,q^3)$、極限への接近を表すパラメータを $\lambda$ とする。$\lambda$ はモデルの外から接近を記述する指標であり、観測者が読む時計ではない。状態族 $\rho(q,\lambda)$ を $\mathcal A_O$ に制限したものを、観測者の状態 $\rho_O(q,\lambda)$ とする。相の判定に用いる状態族は、観測者が時空関係を構成するために利用できる時計・物差し・信号などの記録を表すものとする。この条件によって、たまたま選んだ対象が位置や時刻に反応しないことと、観測者が原理的に位置や時刻の区別を構成できないこととを分ける。ランクを時空の識別能力に結び付けるのは、この条件である。
 
-**(2) 量子Fisher情報行列。** $\rho_O(q,\lambda)$ の量子Fisher情報行列（QFIM）を $F_{\mu\nu}(q,\lambda)$ とする。$\mathcal A_O$ の中のどの測定を選んでも、その測定から得る古典的なFisher情報行列 $I$ は $I\le F$（行列の不等式）を満たす [2, 3]。$F$ は、利用できるあらゆる測定で得られる感度の上限を表す。
+**(2) 量子Fisher情報行列。** $\rho_O(q,\lambda)$ の量子Fisher情報行列（QFIM）を $F_{\mu\nu}(q,\lambda)$ とする。ここでのQFIMは、対称対数微分（SLD）で定めるものである。$\mathcal A_O$ の中のどの測定を選んでも、その測定から得る古典的なFisher情報行列 $I$ は $I\le F$（行列の不等式）を満たす [2, 3]。$F$ は、利用できるあらゆる測定で得られる感度の上限を表す。
 
 **(3) 分解能での無次元化。** 観測者が方向 $\mu$ に求める分解能を $\varepsilon_\mu$ とし、$E=\operatorname{diag}(\varepsilon_0,\dots,\varepsilon_3)$ として
 
@@ -139,6 +139,9 @@ $$
 
 - 複数のパラメータを同時に推定するとき、各方向の最適な測定が両立しない場合は、量子クラメール・ラオ下限に届かない [3]。このとき $D_{\mathrm{eff}}$ は、読み取れる方向の数の上限を与える。
 - 非整数の $D_{\mathrm{eff}}$ は、位相次元や「何次元の空間か」を表すものではない。$D_{\mathrm{eff}}=0$ は、ゼロ次元空間を測定したという意味ではない。
+- $d_O$ が下がることは、観測者にとって区別できない方向が生じることであり、ミクロな自由度そのものが消えることを意味しない。
+- ランクは独立に区別できる方向の数であり、時間と空間の区別（計量の符号）は決めない。
+- 量子Fisher情報行列は、パラメータを連続的に変えたときの区別を数える。位相的なラベルや、超選択則で分けられるセクターの区別のように、連続的な変化で結ばれない区別は、ランクに現れない。
 - 量子重力のスペクトル次元は、拡散過程の戻り確率から定めるもので、定義は異なる [4, 5]。スペクトル次元の結果は、調べる尺度によって有効な次元が変わるという先行結果であり、本試論は次元縮減相を考える先行例として引用する。二つの量の対応を具体的な系で計算することは、今後の課題である。
 
 具体例（独立な正規雑音のモデル）は付録3の第4.1節に示す。
@@ -180,10 +183,12 @@ $$
 3. J. Liu, H. Yuan, X.-M. Lu, X. Wang, "Quantum Fisher information matrix and multiparameter estimation", J. Phys. A: Math. Theor. 53, 023001 (2020). [論文](https://arxiv.org/abs/1907.08037)
 4. S. Carlip, "Dimension and dimensional reduction in quantum gravity", Class. Quantum Grav. 34, 193001 (2017). [論文](https://arxiv.org/abs/1705.05417)
 5. J. Ambjørn, J. Jurkiewicz, R. Loll, "Spectral dimension of the universe is scale dependent", Phys. Rev. Lett. 95, 171301 (2005). [論文](https://arxiv.org/abs/hep-th/0505113)
+6. N. N. Chentsov, *Statistical Decision Rules and Optimal Inference*, Translations of Mathematical Monographs 53 (American Mathematical Society, 1982); Russian original: Nauka, Moscow, 1972.
+7. D. Petz, "Monotone metrics on matrix spaces", Linear Algebra Appl. 244, 81-96 (1996). [論文](https://doi.org/10.1016/0024-3795(94)00211-8)
 
 [本文へ戻る](zerothOrderPhase.html) / [付録2へ進む](appendix2.html)
 
 ---
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
-**最終更新 / Last updated**: 2026-11-07 JST
+**最終更新 / Last updated**: 2026-11-08 JST

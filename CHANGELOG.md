@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.1.0
+  版 / Version: 2.2.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,17 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.2.0 — 2026-11-08
+
+- 日英の本文の版の行の下と README に、査読を受けていない試論であり、新しい実験・観測のデータは含まないこと、数値は既存の理論と公表値に基づく計算の例であることを書いた。
+  Stated below the version line of the Japanese and English essays and in the README that this is an exploratory essay that has not been peer reviewed, that it contains no new experimental or observational data, and that the numbers are worked examples based on existing theory and published values.
+- 本文 第2.2節（日英）に、粗視化で増えない計量が古典では定数倍を除いて Fisher 計量に決まり、量子では一つの族を成して SLD の量子 Fisher 情報がその最小であることを加え、文献 [27] Chentsov と [28] Petz を加えた。付録1（日英）では、QFIM を SLD で定めることを明記し、QFI の単調性の出典として同じ2件を加えた。
+  Added to Section 2.2 of the essay (Japanese and English) that metrics which do not increase under coarse-graining are, up to a constant factor, the Fisher metric in the classical case and form a family in the quantum case, of which the SLD quantum Fisher information is the smallest, with references [27] Chentsov and [28] Petz. In Appendix 1 (Japanese and English), stated that the QFIM is defined by the SLD and added the same two references for the monotonicity of the QFI.
+- 本文 第4.2節と付録1 第2.1節（日英）に、ランク $d_O$ が意味しないことを加えた（自由度の消滅ではないこと、計量の符号を決めないこと、連続的な変化で結ばれない大域的な区別を数えないこと）。
+  Added to Section 4.2 of the essay and Section 2.1 of Appendix 1 (Japanese and English) what the rank $d_O$ does not mean: it is not a disappearance of degrees of freedom, it does not fix the signature of the metric, and it does not count global distinctions not connected by continuous changes.
+- 足した文の内容と英訳を、別の AI（Copilot）に見てもらい、指摘に対応した（TESTING.md）。
+  Had another AI (Copilot) review the content and English translation of the added text, and addressed its comments (TESTING.md).
 
 ## 2.1.0 — 2026-11-08
 

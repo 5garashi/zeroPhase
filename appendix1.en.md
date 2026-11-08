@@ -11,8 +11,8 @@ description: Separates existing theory, epistemological definitions, and origina
   Description: Definitions of the three-phase model, indistinguishability for an observer and the effective dimension, and the logical background (English translation)
   Author: 5garashi.com Design Office
   Created: 2026-11-07
-  Last updated: 2026-11-07 JST
-  Version: 2.0.0
+  Last updated: 2026-11-08 JST
+  Version: 2.2.0
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -20,7 +20,7 @@ description: Separates existing theory, epistemological definitions, and origina
 
 **Author:** 5garashi.com Design Office
 
-**Version:** <span data-version>2.0.0</span>　**Last updated:** 2026-11-07 JST
+**Version:** <span data-version>2.2.0</span>　**Last updated:** 2026-11-08 JST
 
 This appendix presents the logical framework that organizes distinguishability for an observer by three concepts: the Spacetime-Limit Phase, the Dimension-Reduction Phase, and the Zeroth-Order Phase. It separates the constraints shown by existing theory, epistemological definitions, and original hypotheses, and defines indistinguishability for an observer and the effective dimension in the language of measurement.
 
@@ -32,7 +32,7 @@ The three-phase model separates proven physical constraints from the definitions
 
 | Category | Content | Logical role in this essay |
 |---|---|---|
-| **Constraints of existing theory** | Uncertainty relations, dispersion of free wave packets, partial traces, monotonicity of the QFI, holographic bounds, and so on | Show the concrete limits on observables and localization under specified physical conditions |
+| **Constraints of existing theory** | Uncertainty relations, dispersion of free wave packets, partial traces, monotonicity of the QFI [6, 7], holographic bounds, and so on | Show the concrete limits on observables and localization under specified physical conditions |
 | **Epistemological definition** | Differences that cannot in principle be discriminated by any available observation are not treated as physical distinctions in that observer's description | Sets the convention for what is called a physical distinction or a difference between states |
 | **Original hypothesis** | The degrees of freedom, scales, and effective dimension that support discrimination are transformed, and finally the criteria for discrimination themselves are lost | Proposes a connection model from the Spacetime-Limit Phase through the Dimension-Reduction Phase to the Zeroth-Order Phase |
 
@@ -83,7 +83,7 @@ The effective dimension is defined from the sensitivity of the measurements avai
 
 **(1) Parameters and family of states.** Let $q=(q^0,q^1,q^2,q^3)$ be the spacetime parameters the observer assigns to events, and $\lambda$ the parameter expressing the approach to a limit. $\lambda$ is an index that describes the approach from outside the model, not a clock read by the observer. The family of states $\rho(q,\lambda)$ restricted to $\mathcal A_O$ is the observer's state $\rho_O(q,\lambda)$. The family of states used to determine the phase represents records, such as clocks, rulers, and signals, that the observer can use to construct spacetime relations. This condition separates the case in which an arbitrarily chosen object does not respond to position or time from the case in which the observer cannot in principle construct distinctions of position or time. It is this condition that ties the rank to the ability to discriminate spacetime.
 
-**(2) Quantum Fisher information matrix.** Let $F_{\mu\nu}(q,\lambda)$ be the quantum Fisher information matrix (QFIM) of $\rho_O(q,\lambda)$. For any measurement chosen from $\mathcal A_O$, the classical Fisher information matrix $I$ of that measurement satisfies $I\le F$ (as a matrix inequality) [2, 3]. $F$ represents the upper limit on the sensitivity obtainable by any available measurement.
+**(2) Quantum Fisher information matrix.** Let $F_{\mu\nu}(q,\lambda)$ be the quantum Fisher information matrix (QFIM) of $\rho_O(q,\lambda)$. Here the QFIM is the one defined by the symmetric logarithmic derivative (SLD). For any measurement chosen from $\mathcal A_O$, the classical Fisher information matrix $I$ of that measurement satisfies $I\le F$ (as a matrix inequality) [2, 3]. $F$ represents the upper limit on the sensitivity obtainable by any available measurement.
 
 **(3) Making it dimensionless by the resolution.** Let $\varepsilon_\mu$ be the resolution the observer requires in direction $\mu$, set $E=\operatorname{diag}(\varepsilon_0,\dots,\varepsilon_3)$, and form
 
@@ -137,6 +137,9 @@ The conditions of validity and how to read them are as follows.
 
 - When several parameters are estimated simultaneously and the optimal measurements for different directions are incompatible, the quantum Cramér–Rao bound is not reached [3]. In that case $D_{\mathrm{eff}}$ gives an upper limit on the number of readable directions.
 - A non-integer $D_{\mathrm{eff}}$ does not express a topological dimension or "how many dimensions the space has". $D_{\mathrm{eff}}=0$ does not mean that a zero-dimensional space was measured.
+- A drop in $d_O$ means that directions the observer cannot distinguish have appeared; it does not mean that microscopic degrees of freedom themselves disappear.
+- The rank is the number of independently distinguishable directions; it does not fix the distinction between time and space (the signature of the metric).
+- The quantum Fisher information matrix counts distinctions under continuous changes of the parameters. Distinctions not connected by continuous changes, such as topological labels or the distinction between sectors separated by superselection rules, do not appear in the rank.
 - The spectral dimension of quantum gravity is defined from the return probability of a diffusion process, and its definition differs [4, 5]. Results on the spectral dimension are prior results showing that the effective dimension depends on the scale probed, and this essay cites them as a precedent for considering the Dimension-Reduction Phase. Computing the correspondence between the two quantities in concrete systems is a task for future work.
 
 A concrete example (a model with independent Gaussian noise) is given in Section 4.1 of Appendix 3.
@@ -178,10 +181,12 @@ To develop the three phases into a physical model, the following must be specifi
 3. J. Liu, H. Yuan, X.-M. Lu, X. Wang, "Quantum Fisher information matrix and multiparameter estimation", J. Phys. A: Math. Theor. 53, 023001 (2020). [Paper](https://arxiv.org/abs/1907.08037)
 4. S. Carlip, "Dimension and dimensional reduction in quantum gravity", Class. Quantum Grav. 34, 193001 (2017). [Paper](https://arxiv.org/abs/1705.05417)
 5. J. Ambjørn, J. Jurkiewicz, R. Loll, "Spectral dimension of the universe is scale dependent", Phys. Rev. Lett. 95, 171301 (2005). [Paper](https://arxiv.org/abs/hep-th/0505113)
+6. N. N. Chentsov, *Statistical Decision Rules and Optimal Inference*, Translations of Mathematical Monographs 53 (American Mathematical Society, 1982); Russian original: Nauka, Moscow, 1972.
+7. D. Petz, "Monotone metrics on matrix spaces", Linear Algebra Appl. 244, 81-96 (1996). [Paper](https://doi.org/10.1016/0024-3795(94)00211-8)
 
 [Back to the main text](zerothOrderPhase.en.html) / [Go to Appendix 2](appendix2.en.html)
 
 ---
 
 **Author**: 5garashi.com Design Office  
-**Last updated**: 2026-11-07 JST
+**Last updated**: 2026-11-08 JST

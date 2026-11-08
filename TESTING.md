@@ -3,7 +3,7 @@
   概要 / Description: 日本語版・英語版の文書とWeb表示の確認方法・確認記録
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-04
-  版 / Version: 2.1.0
+  版 / Version: 2.2.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -26,6 +26,19 @@
 | 印刷 | 白背景を指定するCSSを確認。実際のPDF・紙面は別途確認する |
 
 独立数式は公開前の原稿と比較する。本文の数式表現を変える場合は意味も別にレビューする。文中数式は `python tools/check_math.py` で、Markdown として処理されて壊れる書き方（縦棒、`](`、バックスラッシュの後の記号、一つの段落で強調になる `_`）がないことを確かめる。この検査は、過去の不具合の例集による自己試験（`--self-test`）とともに、Pagesの配布の前とプルリクエストでGitHub Actionsが自動で動かし、問題があれば公開しない。新しい崩れを見つけたら、例集（`CORPUS`）に足す。公開後は、各ページで描画されずに残った `$` がないことも確かめる。版は `python tools/check_version.py` で確認し、個々の改訂文書のヘッダーも読む。
+
+## 2.2.0の確認（2026-11-08）
+
+確認者：Claude。Zenodo への掲載の準備として、日英の本文と README に査読と新しいデータについての1行を、本文 第2.2節と付録1に粗視化で増えない計量の説明と文献2件（Chentsov、Petz）を、本文 第4.2節と付録1 第2.1節にランク $d_O$ が意味しないことを加えた。近い主題の記録（Zenodo の Arneth、Tulupov ほか）は、本試論がそれらを参照せずに作られ、要約すると主張を取り違えるおそれがあるため、引用しないとした（ユーザーの判断、local/DECISIONS.md）。
+
+| 項目 | 判定 | 根拠・範囲 |
+|---|---|---|
+| 足した文の内容と英訳（別AI） | 合格（指摘に対応） | 共通の道具で Copilot に依頼した（2026-11-08、`-Kind translation`、内容と文献の確認も依頼。指摘13件）。採用：Chentsov の定理は「有限の標本空間で、定数倍を除いて」Fisher 計量に決まる（B）。最小になるのは SLD で定める QFI であると本文と付録1に明記する（B）。付録1の「QFIの単調性」の出典から Braunstein–Caves [2] を外し [6, 7] とする（[2] は QFIM の定義の箇所で引いている、B）。粗視化が古典では確率的な写像、量子では CPTP 写像であることを括弧で示す（C）。「連続的な変化で区別できる方向」を「パラメータを連続的に変えたときに区別できる方向」に、英訳も directions in parameter space … に（C）。超選択則を「超選択則で分けられるセクターの区別」に（C）。「時間と空間の分かれ」を「区別」に、英訳を distinction between time and space に（C）。Chentsov のロシア語の原著（Nauka、1972）を書く（C）。採用しなかったもの：Petz の族の分類（演算子単調関数）の説明の追加（短さを優先、C）、ページ範囲の en dash（本文のほかの文献と同じハイフンにそろえる、C）、「局所的な」の追加（$d_O$ は範囲で一定のランクと定義済み、C） |
+| 文献の書誌 | 合格 | Petz（Linear Algebra Appl. 244, 81-96 (1996)、DOI 10.1016/0024-3795(94)00211-8）と Chentsov（Translations of Mathematical Monographs 53, AMS, 1982）を検索で確かめた（MaRDI の書誌、CiNii の書誌） |
+| 文中数式 | 合格 | `python tools/check_math.py --self-test` は 10/10、`python tools/check_math.py` は 11 文書で問題 0。日英の独立数式の区切りの数は同じ（本文 各36、付録1 各8） |
+| 版・ヘッダー | 合格 | `python tools/check_version.py` で VERSION 2.2.0 と改訂ファイル（本文の日英・付録1の日英・README・CHANGELOG・TESTING.md）の版、本文と付録1の data-version の一致を確認。付録2・3と補足資料は改訂していないため、前の版のまま |
+| 公開ページの表示 | 未実施 | 公開（main への取り込みと Pages の配布）の後に確かめる |
+| 夜・強制カラー・200%拡大・読み上げ・印刷 | 未実施 | 前版の未実施範囲を引き継ぐ。表示のスタイルは変えていない |
 
 ## 2.1.0の確認（2026-11-08）
 

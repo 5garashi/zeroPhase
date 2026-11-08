@@ -10,7 +10,7 @@ description: An exploratory essay on the limits of discrimination in quantum mea
   Author: 5garashi.com Design Office
   Created: 2026-10-31
   Last updated: 2026-11-08 JST
-  Version: 2.1.0
+  Version: 2.2.0
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,9 @@ description: An exploratory essay on the limits of discrimination in quantum mea
 
 **Author:** 5garashi.com Design Office
 
-**Version:** <span data-version>2.1.0</span>　**Last updated:** 2026-11-08 JST
+**Version:** <span data-version>2.2.0</span>　**Last updated:** 2026-11-08 JST
+
+This is an exploratory essay that has not been peer reviewed. It contains no new experimental or observational data; the numbers are worked examples based on existing theory and published values.
 
 ---
 
@@ -116,7 +118,7 @@ remains in any measurement of length [20, 21]. Writing more generally $\delta L\
 
 In high-energy scattering, information about the initial state is dispersed into many produced particles and correlations among them. Let the state of the total system be $\rho(E)$ and the state of the observable subsystem be $\rho_{\mathrm{obs}}(E) = \operatorname{Tr}_{\mathrm{unobs}}\rho(E)$ ($E \equiv \sqrt{s}$ is the center-of-mass energy).
 
-The quantum Fisher information (QFI) expresses how sensitive a state is to a change in a parameter. Operations that discard unobservable degrees of freedom, such as a partial trace, do not increase the QFI [8].
+The quantum Fisher information (QFI) expresses how sensitive a state is to a change in a parameter. Operations that discard unobservable degrees of freedom, such as a partial trace, do not increase the QFI [8]. Metrics that do not increase under coarse-graining (stochastic maps in the classical case, CPTP maps in the quantum case) are fixed uniquely, up to a constant factor, as the Fisher metric for probability distributions on a finite sample space [27]; for quantum states they form a family. The QFI in this essay is the one defined by the symmetric logarithmic derivative (SLD), the smallest in that family [28].
 
 $$
 F_Q\!\left[\rho_{\mathrm{obs}}\right](E) \;\le\; F_Q\!\left[\rho\right](E)
@@ -284,7 +286,7 @@ $$
 
 A direction that can be read well contributes nearly 1, and one that cannot be read contributes nearly 0, so $D_{\mathrm{eff}}$ decreases continuously as sensitivity decays (Figure 2). For finite $N$, $D_{\mathrm{eff}}<4$ even for an ordinary four-dimensional measurement. For this reason, $D_{\mathrm{eff}}$ at finite $N$ is used as an auxiliary indicator of how well each direction can be read under those measurement conditions, and not to classify phases.
 
-The second is the rank $d_O$ of the matrix, constant over a range of the parameters. The states used here represent records, such as clocks, rulers, and signals, that the observer can use to construct spacetime relations. This separates the case in which an arbitrarily chosen object merely does not respond to position or time from the case in which the observer cannot construct the distinction in principle. As the number of measurements increases without bound, $D_{\mathrm{eff}}$ approaches the rank. States along a direction in which the sensitivity is zero throughout a range of the parameters (the kernel of the matrix) are strictly indistinguishable for the observer ([Appendix 1, Section 2.1 (6)](appendix1.en.html)). A drop in rank at a single point does not qualify. The case in which pairs of states become harder to distinguish while $d_O=4$ is the Spacetime-Limit Phase, and $d_O<4$ is the Dimension-Reduction Phase.
+The second is the rank $d_O$ of the matrix, constant over a range of the parameters. The states used here represent records, such as clocks, rulers, and signals, that the observer can use to construct spacetime relations. This separates the case in which an arbitrarily chosen object merely does not respond to position or time from the case in which the observer cannot construct the distinction in principle. As the number of measurements increases without bound, $D_{\mathrm{eff}}$ approaches the rank. States along a direction in which the sensitivity is zero throughout a range of the parameters (the kernel of the matrix) are strictly indistinguishable for the observer ([Appendix 1, Section 2.1 (6)](appendix1.en.html)). A drop in rank at a single point does not qualify. The case in which pairs of states become harder to distinguish while $d_O=4$ is the Spacetime-Limit Phase, and $d_O<4$ is the Dimension-Reduction Phase. A drop in $d_O$ is a loss of distinctions for the observer, not a disappearance of degrees of freedom. The rank counts the directions in parameter space along which states can be distinguished under continuous changes of the parameters; it counts neither the signature of the metric nor global distinctions ([Appendix 1, Section 2.1](appendix1.en.html)).
 
 The decay of sensitivity and the drop in rank play different roles. The eigenvalues, and $D_{\mathrm{eff}}$ under fixed measurement conditions, express how much the sensitivity has weakened; a drop in rank expresses that an independent direction has been lost. In a process in which sensitivity is lost smoothly, the rank need not drop in steps. Both are indicators of approaching the Zeroth-Order Phase.
 
@@ -425,6 +427,8 @@ Generative AI tools (Claude, Codex, GitHub Copilot, and others) were used to dra
 24. N. Margolus and L. B. Levitin, "The maximum speed of dynamical evolution", Physica D 120, 188-195 (1998), arXiv:quant-ph/9710043.
 25. X.-M. Lu, H. Krovi, R. Nair, S. Guha, and J. H. Shapiro, "Quantum-optimal detection of one-versus-two incoherent optical sources with arbitrary separation", npj Quantum Inf. 4, 64 (2018), arXiv:1802.02300.
 26. K. M. R. Audenaert, J. Calsamiglia, R. Muñoz-Tapia, E. Bagan, Ll. Masanes, A. Acín, and F. Verstraete, "Discriminating States: The Quantum Chernoff Bound", Phys. Rev. Lett. 98, 160501 (2007).
+27. N. N. Chentsov, *Statistical Decision Rules and Optimal Inference*, Translations of Mathematical Monographs 53 (American Mathematical Society, 1982); Russian original: Nauka, Moscow, 1972.
+28. D. Petz, "Monotone metrics on matrix spaces", Linear Algebra Appl. 244, 81-96 (1996). [Paper](https://doi.org/10.1016/0024-3795(94)00211-8)
 
 ---
 

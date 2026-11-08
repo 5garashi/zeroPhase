@@ -32,7 +32,7 @@ The three-phase model separates proven physical constraints from the definitions
 
 | Category | Content | Logical role in this essay |
 |---|---|---|
-| **Constraints of existing theory** | Uncertainty relations, dispersion of free wave packets, partial traces, monotonicity of the QFI [6, 7], holographic bounds, and so on | Show the concrete limits on observables and localization under specified physical conditions |
+| **Constraints of existing theory** | Uncertainty relations, dispersion of free wave packets, partial traces, monotonicity of the Fisher metric and the QFI [6, 7], holographic bounds, and so on | Show the concrete limits on observables and localization under specified physical conditions |
 | **Epistemological definition** | Differences that cannot in principle be discriminated by any available observation are not treated as physical distinctions in that observer's description | Sets the convention for what is called a physical distinction or a difference between states |
 | **Original hypothesis** | The degrees of freedom, scales, and effective dimension that support discrimination are transformed, and finally the criteria for discrimination themselves are lost | Proposes a connection model from the Spacetime-Limit Phase through the Dimension-Reduction Phase to the Zeroth-Order Phase |
 
@@ -139,7 +139,7 @@ The conditions of validity and how to read them are as follows.
 - A non-integer $D_{\mathrm{eff}}$ does not express a topological dimension or "how many dimensions the space has". $D_{\mathrm{eff}}=0$ does not mean that a zero-dimensional space was measured.
 - A drop in $d_O$ means that directions the observer cannot distinguish have appeared; it does not mean that microscopic degrees of freedom themselves disappear.
 - The rank is the number of independently distinguishable directions; it does not fix the distinction between time and space (the signature of the metric).
-- The quantum Fisher information matrix counts distinctions under continuous changes of the parameters. Distinctions not connected by continuous changes, such as topological labels or the distinction between sectors separated by superselection rules, do not appear in the rank.
+- The quantum Fisher information matrix counts distinctions under continuous changes of the parameters. Discrete distinctions that are not connected through the continuous parameters of the family of states being compared (such as topological labels, or the labels of sectors separated by superselection rules) do not appear in the rank. However, quantities that can be treated as continuous parameters, such as the mixing proportions of the sectors, may have their changes reflected in the rank.
 - The spectral dimension of quantum gravity is defined from the return probability of a diffusion process, and its definition differs [4, 5]. Results on the spectral dimension are prior results showing that the effective dimension depends on the scale probed, and this essay cites them as a precedent for considering the Dimension-Reduction Phase. Computing the correspondence between the two quantities in concrete systems is a task for future work.
 
 A concrete example (a model with independent Gaussian noise) is given in Section 4.1 of Appendix 3.

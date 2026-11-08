@@ -20,8 +20,8 @@ Changes by version, newest first (Identity 12-7 (9)).
   Added to Section 2.2 of the essay (Japanese and English) that metrics which do not increase under coarse-graining are, up to a constant factor, the Fisher metric in the classical case and form a family in the quantum case, of which the SLD quantum Fisher information is the smallest, with references [27] Chentsov and [28] Petz. In Appendix 1 (Japanese and English), stated that the QFIM is defined by the SLD and added the same two references for the monotonicity of the QFI.
 - 本文 第4.2節と付録1 第2.1節（日英）に、ランク $d_O$ が意味しないことを加えた（自由度の消滅ではないこと、計量の符号を決めないこと、連続的な変化で結ばれない大域的な区別を数えないこと）。
   Added to Section 4.2 of the essay and Section 2.1 of Appendix 1 (Japanese and English) what the rank $d_O$ does not mean: it is not a disappearance of degrees of freedom, it does not fix the signature of the metric, and it does not count global distinctions not connected by continuous changes.
-- 足した文の内容と英訳を、別の AI（Copilot）に見てもらい、指摘に対応した（TESTING.md）。
-  Had another AI (Copilot) review the content and English translation of the added text, and addressed its comments (TESTING.md).
+- 足した文の内容と英訳を、別の AI（Copilot）に見てもらい、公開の前に内容を別の AI（Codex）にも見てもらって、指摘に対応した。これにあわせて、本文 第2.2節の QFI が増えない操作をパラメータによらないものに限り、第4.2節の区別できない状態の書き方（核に入る向きの曲線に沿って結ぶ）を正確にした（TESTING.md）。
+  Had another AI (Copilot) review the content and English translation of the added text, and another AI (Codex) review the content before publication, and addressed their comments. Accordingly, Section 2.2 now limits the operations that do not increase the QFI to parameter-independent ones, and Section 4.2 states more precisely which states are indistinguishable (those joined by a curve whose tangent lies in the kernel) (TESTING.md).
 
 ## 2.1.0 — 2026-11-08
 

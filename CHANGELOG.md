@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.0.3
+  版 / Version: 2.1.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,19 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.1.0 — 2026-11-08
+
+- 本文 第3.1節（日英）を、遠方を区別する難しさの二つの種類に分けて書き直した。一つは量子測定と観測者の有限の資源から出る原理的な限界で、光源が一つか二つかの識別の式を「遠方の二光源の量子識別限界」と名づけ、光子1個あたりの指数から $(1+z)$ が打ち消すこと、理想的な条件での上限であることと、その前提を書いた。もう一つは私たちの宇宙の歴史が強さを決める制約で、(a) 光学的厚さには宇宙の歴史によらない芯（データ処理不等式）と、散乱されなかった光子だけを使うモデルでの誤り確率の上限（$e^{-\tau}$ が指数の中に入る）を、(b) 宇宙分散には、ガウス的なゆらぎでのモードの数の芯を加えた。
+  Rewrote Section 3.1 of the essay (Japanese and English) to separate two kinds of difficulty in distinguishing distant objects. The first is a limit in principle from quantum measurement and the observer's finite resources: the expression for distinguishing one source from two is named the "quantum limit on distinguishing two distant sources", with the cancellation of $(1+z)$ in the per-photon exponent and the ideal conditions under which it is an upper limit. The second consists of constraints whose strength is set by the history of our universe: (a) optical depth now has a core independent of that history (the data-processing inequality) and an upper bound on the error probability in a model that uses only unscattered photons ($e^{-\tau}$ enters the exponent), and (b) cosmic variance has a core in the number of modes for Gaussian fluctuations.
+- 第4.2節（日英）に、資源が有限であるだけでは限界が決まらず、物理の上限があるため測定回数の上限 $N_{\max}$ が決まった値になることを加えた。第6節の確かさの表を合わせた。
+  Added to Section 4.2 (Japanese and English) that finite resources alone do not fix a limit, and that the physical upper limits make the upper limit $N_{\max}$ on the number of measurements a definite value. Updated the table in Section 6 to match.
+- 付録2（日英）に第10節「遠方の識別を資源の限界まで押し進めた見積もり」を加えた。本試論の原理として、(1) 観測時間には上限がある、(2) 口径の大きさには上限がある、(3) 測定の精度は光子1個では波長（エネルギー）で決まり、$N$ 個で $\sqrt N$ 倍まで良くなる、の三つを置き、遠方の二光源の量子識別限界に原理的な最大の資源を代入した。口径は宇宙の膨張に逆らって保てる大きさ（転回半径の2倍）に限り、測定の軸は届いた光で合わせ（位置と運動量の不確定性関係から、光子1個の方向の精度は $\lambda_{\mathrm{obs}}/(2\pi D)$ 程度）、装置の形の精度の下限はプランク長程度とした。固定した光源の例で、計算した範囲では、見分けられる最小の間隔が遠い過去ほど単調に大きくなり、さかのぼるほど限りなく大きくなる傾向が観測時間の上限の帰結であることを、本試論の推定として示した。本文 第3.1節の終わりに要約を加え、参考文献を7件加えた。
+  Added Section 10, "An Estimate That Pushes Distant Discrimination to the Limits of Resources", to Appendix 2 (Japanese and English). Adopting three principles of this essay, (1) the observation time has an upper limit, (2) the size of the aperture has an upper limit, and (3) the precision of a measurement with a single photon is set by its wavelength (energy) and improves by up to a factor $\sqrt N$ with $N$ photons, it substitutes the maximum resources in principle into the quantum limit on distinguishing two distant sources. The aperture is limited to the size that can be held together against the expansion of the universe (twice the turnaround radius), the measurement axis is aligned with the received light (from the uncertainty relation between position and momentum, the precision of direction from a single photon is about $\lambda_{\mathrm{obs}}/(2\pi D)$), and the lower limit on the precision of the shape of the apparatus is taken to be of the order of the Planck length. As an estimate of this essay, it shows that, within the range computed for the example with a fixed source, the smallest distinguishable separation grows monotonically further into the past, and that its tendency to grow without bound the further one goes back is a consequence of the upper limit on the observation time. A summary was added at the end of Section 3.1 of the essay, and seven references were added.
+- 補足資料「遠方の観測と区別の難しさ」第3.7節に、遠方の二光源の量子識別限界を光の伝わり方から導き直す説明を加えた。光源から開口への振幅（経路積分の近軸近似であるフレネルの伝搬核）から、光源の位置の違いが開口を横切る位相の傾きだけに現れること、円形の開口での状態の重なり $2J_1(v)/v$、量子チェルノフ指数の最小が端で取られる理由、指数が間隔の2乗に比例する理由を示し、図4・図5を加えた。既存の結果の導き直しであり、限界の式と結論は変えていない。
+  Added to Section 3.7 of the supplementary note on Section 3 (Japanese only) an explanation that rederives the quantum limit on distinguishing two distant sources from the propagation of light. From the amplitude from a source to the aperture (the Fresnel propagation kernel, the paraxial approximation of the path integral), it shows that the difference in source position appears only as a tilt of the phase across the aperture, the overlap $2J_1(v)/v$ of the states on a circular aperture, why the quantum Chernoff exponent takes its minimum at the end point, and why the exponent is proportional to the square of the separation, with Figures 4 and 5. It rederives existing results and changes neither the expression for the limit nor the conclusions.
+- 内容の妥当性と英訳を、別の AI（Copilot）に4回見てもらい、指摘に対応した。補足資料への追記の案は、別の AI（Codex）に見てもらい、指摘に対応した（TESTING.md）。適用する Design Office Identity を 4.26.0 に改めた。
+  Had another AI (Copilot) review the validity of the content and the English translation four times, and addressed its comments; had another AI (Codex) review the proposal for the addition to the supplementary note, and addressed its comments (TESTING.md). Updated the applied Design Office Identity to 4.26.0.
 
 ## 2.0.3 — 2026-11-08
 

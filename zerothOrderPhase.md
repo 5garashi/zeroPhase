@@ -10,7 +10,7 @@ description: 時空限界相・次元縮減相・第零次相を通じて、量�
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-28
   最終更新 / Last updated: 2026-11-08 JST
-  版 / Version: 2.1.0
+  版 / Version: 2.2.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,9 @@ description: 時空限界相・次元縮減相・第零次相を通じて、量�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>2.1.0</span>　**更新日:** 2026-11-08 JST
+**版:** <span data-version>2.2.0</span>　**更新日:** 2026-11-08 JST
+
+本試論は査読を受けていない試論であり、新しい実験・観測のデータは含まない。数値は、既存の理論と公表値に基づく計算の例である。
 
 ---
 
@@ -114,7 +116,7 @@ $$
 
 高エネルギー散乱では、初期状態の情報が多数の生成粒子や粒子間相関へ分散する。全体系の状態を $\rho(E)$、観測可能な部分系の状態を $\rho_{\mathrm{obs}}(E) = \operatorname{Tr}_{\mathrm{unobs}}\rho(E)$ とする（$E \equiv \sqrt{s}$ は重心系エネルギー）。
 
-量子Fisher情報（Quantum Fisher Information, QFI）は、状態がパラメータの変化にどれほど敏感かを表す。部分トレースのような観測できない自由度を捨てる操作では、QFIは増えない [8]。
+量子Fisher情報（Quantum Fisher Information, QFI）は、状態がパラメータの変化にどれほど敏感かを表す。部分トレースのような観測できない自由度を捨てる操作では、QFIは増えない [8]。粗視化（古典では確率的な写像、量子ではCPTP写像）で増えない計量は、有限の標本空間の確率分布では定数倍を除いてFisher計量にただ一つに決まり [27]、量子状態では一つの族を成す。本試論のQFIは対称対数微分（SLD）で定めるもので、その族の中で最も小さい [28]。
 
 $$
 F_Q\!\left[\rho_{\mathrm{obs}}\right](E) \;\le\; F_Q\!\left[\rho\right](E)
@@ -282,7 +284,7 @@ $$
 
 とする。十分に読み取れる方向は 1、読み取れない方向は 0 に近い寄与をするため、$D_{\mathrm{eff}}$ は感度の減衰とともに連続的に下がる（図2）。$N$ が有限なら、通常の四次元の測定でも $D_{\mathrm{eff}}<4$ となる。このため、有限の $N$ での $D_{\mathrm{eff}}$ は、その測定条件で各方向をどれだけ読み取れるかを表す補助指標とし、相の区分には使わない。
 
-二つ目は、パラメータのある範囲で一定の行列のランク $d_O$ である。ここで用いる状態は、観測者が時空関係を構成するために利用できる時計・物差し・信号などの記録を表すものとする。たまたま選んだ対象が位置や時刻に反応しないだけの場合と、観測者が原理的に区別を構成できない場合とを分けるためである。測定回数を限りなく増やすと、$D_{\mathrm{eff}}$ はランクに一致する。ある範囲の全体で感度がゼロとなる方向（行列の核）に沿った状態は、観測者にとって厳密に区別できない（付録1 第2.1節 (6)）。一点だけでランクが下がる場合は、これに当たらない。$d_O=4$ のまま比べる状態の組の区別が難しくなる場合を時空限界相、$d_O<4$ を次元縮減相とする。
+二つ目は、パラメータのある範囲で一定の行列のランク $d_O$ である。ここで用いる状態は、観測者が時空関係を構成するために利用できる時計・物差し・信号などの記録を表すものとする。たまたま選んだ対象が位置や時刻に反応しないだけの場合と、観測者が原理的に区別を構成できない場合とを分けるためである。測定回数を限りなく増やすと、$D_{\mathrm{eff}}$ はランクに一致する。ある範囲の全体で感度がゼロとなる方向（行列の核）に沿った状態は、観測者にとって厳密に区別できない（付録1 第2.1節 (6)）。一点だけでランクが下がる場合は、これに当たらない。$d_O=4$ のまま比べる状態の組の区別が難しくなる場合を時空限界相、$d_O<4$ を次元縮減相とする。$d_O$ の低下は観測者にとっての区別の喪失であり、自由度の消滅ではない。ランクが数えるのは、パラメータを連続的に変えたときに区別できる方向の数で、計量の符号や大域的な区別は数えない（付録1 第2.1節）。
 
 感度の減衰とランクの低下は、役割が異なる。固有値や固定した測定条件での $D_{\mathrm{eff}}$ は感度がどれだけ弱まったかを表し、ランクの低下は独立な方向が失われたことを表す。滑らかに感度が失われる過程で、ランクが段階的に下がる必要はない。どちらも第零次相へ近づくことの指標である。
 
@@ -423,6 +425,8 @@ $$
 24. N. Margolus and L. B. Levitin, "The maximum speed of dynamical evolution", Physica D 120, 188-195 (1998), arXiv:quant-ph/9710043.
 25. X.-M. Lu, H. Krovi, R. Nair, S. Guha, and J. H. Shapiro, "Quantum-optimal detection of one-versus-two incoherent optical sources with arbitrary separation", npj Quantum Inf. 4, 64 (2018), arXiv:1802.02300.
 26. K. M. R. Audenaert, J. Calsamiglia, R. Muñoz-Tapia, E. Bagan, Ll. Masanes, A. Acín, and F. Verstraete, "Discriminating States: The Quantum Chernoff Bound", Phys. Rev. Lett. 98, 160501 (2007).
+27. N. N. Chentsov, *Statistical Decision Rules and Optimal Inference*, Translations of Mathematical Monographs 53 (American Mathematical Society, 1982); Russian original: Nauka, Moscow, 1972.
+28. D. Petz, "Monotone metrics on matrix spaces", Linear Algebra Appl. 244, 81-96 (1996). [論文](https://doi.org/10.1016/0024-3795(94)00211-8)
 
 ---
 

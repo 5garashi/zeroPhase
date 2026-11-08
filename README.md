@@ -3,13 +3,13 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.1.0
+  版 / Version: 2.2.0
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 2.1.0([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 2.2.0([改版履歴 / Changelog](CHANGELOG.md))
 
 数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
 Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.
@@ -23,6 +23,9 @@ In 2.0.0, the Japanese essay and Appendices 1–3 were revised, the English essa
 観測者が対象を区別できる限界を、時空限界相・次元縮減相・第零次相の三つの概念で整理する試論です。量子測定の限界から宇宙論の極限までをたどり、位置・距離・時間による区別そのものが成り立たなくなる状態を「未分化の第零次相(Zeroth-Order Phase)」と仮称して考えます。定量的な予測を示す論文ではなく、思考実験として書いています。
 
 An essay that organizes the limits of an observer's ability to tell things apart by three concepts: the Spacetime-Limit Phase, the Dimension-Reduction Phase, and the Zeroth-Order Phase. It follows measurement limits from quantum physics to the extremes of cosmology, and tentatively calls the state in which distinctions by position, distance, and time no longer hold the "Zeroth-Order Phase". It is a thought experiment, not a paper with quantitative predictions.
+
+査読を受けていない試論であり、新しい実験・観測のデータは含まない。数値は、既存の理論と公表値に基づく計算の例である。
+An exploratory essay that has not been peer reviewed. It contains no new experimental or observational data; the numbers are worked examples based on existing theory and published values.
 
 **本文を読む / Read the essay**
 

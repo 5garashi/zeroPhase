@@ -3,18 +3,18 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.0.3
+  版 / Version: 2.1.0
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 2.0.3([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 2.1.0([改版履歴 / Changelog](CHANGELOG.md))
 
 数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
 Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.
 
-適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.25.0（2026-11-08確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
+適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.26.0（2026-11-08確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
 
 2.0.0では、日本語本文・付録1〜3を改稿し、英語本文を訳し直して、付録1〜3の英語版を加えた。補足資料2つは日本語のみで公開する。本文の表示先はGitHub Pagesの公開ページを指定する（Identity 8-9 (9)）。
 

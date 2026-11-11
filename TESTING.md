@@ -36,7 +36,7 @@
 | DOI の解決 | 合格 | `https://doi.org/10.5281/zenodo.24134735`（すべての版）と版 2.4.0 の DOI が、どちらも Zenodo の記録 24134736 に解決することを確かめた。記録の版 2.4.0、許諾 cc-by-nd-4.0、資料の種類 preprint を Zenodo の API で確かめた |
 | 英訳（別AI） | 合格（指摘に対応） | 加えた行と改版履歴の日英を Copilot に依頼した（`-Kind translation`）。指摘2件（いずれも C）を採った：「すべての版を指す」を、すべての版に共通で最新の版に解決すると明確にした。改版履歴の英語を "texts of the essay"・"version 2.4.0" にした |
 | 文中数式・版 | 合格 | `python tools/check_math.py --self-test` は 11/11、`python tools/check_math.py` は問題 0、`python tools/check_version.py` で VERSION 2.4.1 と改訂ファイルの版、data-version の一致を確認 |
-| 公開ページの表示 | 未実施 | 公開後に、日英の本文と index で DOI の行とリンク先、版の表示を確かめる |
+| 公開ページの表示 | 合格（確認範囲内） | 公開後（PR #4 の検査、Pages の配布、v2.4.1 のタグ・Release の作成は成功）、Edgeのヘッドレス表示で日英の本文と index を読み込んだ。本文は日英とも版 2.4.1、DOI の行があり、リンク先は `https://doi.org/10.5281/zenodo.24134735`。MathJaxのエラー0、描画されずに残った `$` は0、数式の数は各228（2.4.0 と同じ）。index にも DOI の行とリンクがある |
 
 ## 2.4.0の確認（2026-11-11）
 

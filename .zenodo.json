@@ -1,0 +1,24 @@
+{
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "title": "Observation Limits and the Undifferentiated Origin: An Epistemological Inquiry from Quantum Measurement to Cosmology",
+  "creators": [
+    {
+      "name": "5garashi.com Design Office"
+    }
+  ],
+  "description": "<p>An exploratory essay that organizes the limits of an observer's ability to tell things apart by three concepts: the Spacetime-Limit Phase, the Dimension-Reduction Phase, and the Zeroth-Order Phase. It follows measurement limits from quantum physics to the extremes of cosmology. The Zeroth-Order Phase is defined as the case in which the observer has no means of observation that distinguish differences in time, distance, direction, or causal order. Appendices 1–4 give the quantum Fisher information under stated observation conditions, toy models, estimates of resource limits, and the quantum limit on distinguishing two distant sources. Japanese and English editions are included (Japanese title: 観測限界と未分化の原点：量子測定から宇宙論へ至る認識論的思索).</p><p>It has not been peer reviewed and contains no new experimental or observational data; the numbers are worked examples based on existing theory and published values.</p><p>Read online: <a href=\"https://5garashi.github.io/zeroPhase/\">https://5garashi.github.io/zeroPhase/</a></p>",
+  "access_right": "open",
+  "license": "cc-by-nd-4.0",
+  "keywords": [
+    "quantum Fisher information",
+    "quantum measurement limits",
+    "distinguishability",
+    "observer",
+    "cosmology",
+    "Zeroth-Order Phase",
+    "Spacetime-Limit Phase",
+    "Dimension-Reduction Phase"
+  ],
+  "notes": "This essay was written with AI assistance, as disclosed in the essay and README. The documents are licensed under CC BY-ND 4.0; tools/ and .github/workflows/ are licensed under MIT."
+}

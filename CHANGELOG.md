@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.4.1
+  版 / Version: 2.4.2
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,11 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.4.2 — 2026-11-12
+
+- Zenn の紹介記事（`articles/zerophase-observation-limits.md`）を、これまでの連携先のリポジトリ（galois-theory-introduction）から、このリポジトリに移した。Zenn の GitHub 連携で、このリポジトリから同期する。記事には 2.0.2 から 2.4.1 までの更新の節を加え、第零次相の定義を 2.3.0 の定義に、付録の数を4つに改め、補足資料への案内を外した。`articles/` は公開ページ（GitHub Pages）から外した。README のファイルの一覧の付録を1〜4に直した。本文・付録は変えていない。
+  Moved the Zenn introduction article (`articles/zerophase-observation-limits.md`) from the previously linked repository (galois-theory-introduction) into this repository, from which Zenn's GitHub integration syncs it. An update section covering versions 2.0.2 to 2.4.1 was added to the article; its definition of the Zeroth-Order Phase was updated to that of 2.3.0, the number of appendices was corrected to four, and the pointer to the supplementary notes was removed. `articles/` is not published on GitHub Pages. The appendix entries in the README file list were corrected to 1 to 4. The essay and appendices are unchanged.
 
 ## 2.4.1 — 2026-11-11
 

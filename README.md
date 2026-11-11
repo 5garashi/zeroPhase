@@ -3,13 +3,13 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.4.1
+  版 / Version: 2.4.2
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 2.4.1([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 2.4.2([改版履歴 / Changelog](CHANGELOG.md))
 
 DOI: [10.5281/zenodo.24134735](https://doi.org/10.5281/zenodo.24134735)(Zenodo。すべての版に共通で、最新の版に解決する / shared by all versions, resolves to the latest version)
 
@@ -58,8 +58,9 @@ An exploratory essay that has not been peer reviewed. It contains no new experim
 | ファイル / File | 内容 / Contents |
 | :--- | :--- |
 | `zerothOrderPhase.md` / `zerothOrderPhase.en.md` | 本文の日本語版 / English essay |
-| `appendix1.md`〜`appendix3.md` / `appendix1.en.md`〜`appendix3.en.md` | 付録の日本語版 / English appendices |
+| `appendix1.md`〜`appendix4.md` / `appendix1.en.md`〜`appendix4.en.md` | 付録の日本語版 / English appendices |
 | `補足資料/` | 補足資料（日本語） / Supplementary notes (Japanese) |
+| `articles/` | Zenn の紹介記事（日本語。Zenn の GitHub 連携で同期する。公開ページには含めない。MIT） / Zenn introduction article (Japanese; synced through Zenn's GitHub integration; not part of the published pages; MIT) |
 | `VERSION` | 版の番号(Identity 12-7) / Version number |
 | `CHANGELOG.md` | 改版履歴 / Revision history |
 | `TESTING.md` | 確認方法と結果 / Verification method and results |
@@ -83,9 +84,9 @@ Generative AI tools (Claude, Codex, GitHub Copilot, and others) were used to dra
 
 ## ライセンス / License
 
-本文は [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.ja)(表示 - 改変禁止 4.0 国際)で提供します。出典(5garashi.com設計事務所)を示せば、商用を含めて共有・転載できます。改変したものの配布はできません。`tools/` と `.github/workflows/` は MIT License です(各ファイルのヘッダーによる)。
+本文は [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.ja)(表示 - 改変禁止 4.0 国際)で提供します。出典(5garashi.com設計事務所)を示せば、商用を含めて共有・転載できます。改変したものの配布はできません。`tools/`・`.github/workflows/`・`articles/` は MIT License です(各ファイルのヘッダーによる)。
 
-The text is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). You may share and republish it, including commercially, with attribution to 5garashi.com Design Office; you may not distribute modified versions. Files in `tools/` and `.github/workflows/` are under the MIT License, as stated in their headers.
+The text is licensed under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). You may share and republish it, including commercially, with attribution to 5garashi.com Design Office; you may not distribute modified versions. Files in `tools/`, `.github/workflows/` and `articles/` are under the MIT License, as stated in their headers.
 
 Copyright © 2026 5garashi.com設計事務所 / 5garashi.com Design Office
 

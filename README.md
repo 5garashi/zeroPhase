@@ -3,18 +3,18 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.2.0
+  版 / Version: 2.4.0
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 2.2.0([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 2.4.0([改版履歴 / Changelog](CHANGELOG.md))
 
 数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
 Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.
 
-適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.26.0（2026-11-08確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
+適用基準: [Design Office Identity](https://5garashi.github.io/5garashi-identity/) 4.26.0（2026-11-11確認）。確認方法は[品質確認規定](https://5garashi.github.io/5garashi-quality/) 1.3.0の文書・Web表示の項目を参照。[確認方法と結果](TESTING.md)に実施範囲と未実施項目を記録する。全項目の適合確認を宣言するものではない。
 
 2.0.0では、日本語本文・付録1〜3を改稿し、英語本文を訳し直して、付録1〜3の英語版を加えた。補足資料2つは日本語のみで公開する。本文の表示先はGitHub Pagesの公開ページを指定する（Identity 8-9 (9)）。
 
@@ -37,7 +37,7 @@ An exploratory essay that has not been peer reviewed. It contains no new experim
 
 1. 時空限界相：対象を区別する能力の限界 / The Spacetime-Limit Phase
 2. 次元縮減相への接続：局在と観測可能な自由度 / Toward the Dimension-Reduction Phase
-3. 宇宙論的極限における区別不能性 / Indistinguishability at cosmological limits
+3. 第零次相への問い：宇宙論的極限における区別不能性 / Questions toward the Zeroth-Order Phase: indistinguishability at cosmological limits
 4. 三相をつなぐ試論：四つの極限から第零次相へ / From four limits to the Zeroth-Order Phase
 5. 結論と展望 / Conclusion and outlook
 6. 本試論の主張の確かさについて / On the status of the claims
@@ -49,11 +49,7 @@ An exploratory essay that has not been peer reviewed. It contains no new experim
 | 1. 三相モデルの論理的背景 / Logical background of the three-phase model | [appendix1](https://5garashi.github.io/zeroPhase/appendix1.html) | [appendix1.en](https://5garashi.github.io/zeroPhase/appendix1.en.html) |
 | 2. 観測限界と識別可能性の数式解説 / Mathematical notes | [appendix2](https://5garashi.github.io/zeroPhase/appendix2.html) | [appendix2.en](https://5garashi.github.io/zeroPhase/appendix2.en.html) |
 | 3. CCCの接続境界と第零次相 / The CCC connecting boundary and the Zeroth-Order Phase | [appendix3](https://5garashi.github.io/zeroPhase/appendix3.html) | [appendix3.en](https://5garashi.github.io/zeroPhase/appendix3.en.html) |
-
-補足資料（日本語のみ） / Supplementary notes (Japanese only):
-
-- [量子Fisher情報（QFI）から見る情報散逸と観測可能性](https://5garashi.github.io/zeroPhase/補足資料/QFI解説.html)
-- [遠方の観測と区別の難しさ（第3節の解説）](https://5garashi.github.io/zeroPhase/補足資料/宇宙論的極限の解説.html)
+| 4. 遠方の二光源の量子識別限界と伝播の影響 / Distinguishing two distant sources and the effects of propagation | [appendix4](https://5garashi.github.io/zeroPhase/appendix4.html) | [appendix4.en](https://5garashi.github.io/zeroPhase/appendix4.en.html) |
 
 ## ファイル / Files
 

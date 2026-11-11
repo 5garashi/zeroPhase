@@ -11,8 +11,8 @@ description: Explains the meaning and derivation of the total variation distance
   Description: Meaning, derivation, and conditions of the equations for observation limits and distinguishability (English translation)
   Author: 5garashi.com Design Office
   Created: 2026-11-07
-  Last updated: 2026-11-08 JST
-  Version: 2.1.0
+  Last updated: 2026-11-11 JST
+  Version: 2.4.0
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -20,11 +20,11 @@ description: Explains the meaning and derivation of the total variation distance
 
 **Author:** 5garashi.com Design Office
 
-**Version:** <span data-version>2.1.0</span>　**Last updated:** 2026-11-08 JST
+**Version:** <span data-version>2.4.0</span>　**Last updated:** 2026-11-11 JST
 
 This appendix organizes the derivations and conditions of the equations on observation limits and distinguishability used in the main text.
 
-[Main text: Observation Limits and the Undifferentiated Origin](zerothOrderPhase.en.html) / [Appendix 1: Logical background](appendix1.en.html)
+[Main text: Observation Limits and the Undifferentiated Origin](zerothOrderPhase.en.html) / [Appendix 1: Logical background](appendix1.en.html) / [Appendix 4: Distant observation](appendix4.en.html)
 
 ## 0. Statistical and Quantum-Information Measures Used in This Essay
 
@@ -39,6 +39,30 @@ This appendix organizes the derivations and conditions of the equations on obser
 ## 1. Total Variation Distance: The Degree of Discrimination of Measurement Outcomes
 
 The total variation distance between probability densities $P_A(y), P_B(y)$ takes values in $0 \le D_{AB} \le 1$; $D_{AB}=1$ means perfect distinguishability and $D_{AB}=0$ means indistinguishability by the specified measurement. Even if $D_{AB}=0$ for one measurement, the states may be distinguishable by another. Indistinguishability of quantum states is discussed with respect to a specified set of all available measurements ($\mathcal A_O$ in Appendix 1, Section 1.1).
+
+### 1.1 An Example with Normal Distributions of the Same Width
+
+When two emission conditions A and B give measurement results with normal distributions whose centers are separated by $\delta$ and whose standard deviations are both $\sigma$,
+
+$$
+D_{AB}=\operatorname{erf}\!\left(\frac{\delta}{2\sqrt2\,\sigma}\right),\qquad
+P_e=\frac{1-D_{AB}}{2}=1-\Phi\!\left(\frac{\delta}{2\sigma}\right)
+$$
+
+holds. $P_e$ is the minimum error probability when A and B, with equal prior probabilities, are told apart from a single result of this measurement, and $\Phi$ is the cumulative distribution function of the standard normal distribution. The degree of discrimination depends only on the ratio $\delta/\sigma$.
+
+Derivation: placing the center of A at 0 and that of B at $\delta$, the two densities cross at the midpoint $\delta/2$, and $P_A>P_B$ for $y<\delta/2$. Hence $D_{AB}=\int_{y<\delta/2}(P_A-P_B)\,\mathrm{d}y=\Phi(\delta/2\sigma)-\Phi(-\delta/2\sigma)=2\Phi(\delta/2\sigma)-1$, which equals the error-function form above.
+
+| Example | Separation of the centers | Width | What is decided |
+|---|---|---|---|
+| Spatial direction | Separation $\delta x$ of the centers of the distributions of detection positions corresponding to two points | Width $\sigma_x$ of the detection positions | From which point a photon came |
+| Time direction | Difference $\delta t$ between two emission times | Width $\sigma_t$ of the arrival times | Whether a photon was emitted earlier or later |
+
+The conditions for using this example are as follows.
+
+1. For each of the two emission conditions, the distribution of measurement results is specified and compared. The predicted distribution of the position of a single photon is not itself taken as the error probability of discrimination.
+2. This is a test that chooses "which point" or "which time". It differs from the test of "one source or two sources" in [Appendix 4, Section 3](appendix4.en.html), and the exponents and coefficients of the quantum Chernoff bound there cannot be used.
+3. If $\delta>0$ and $\sigma$ is finite, $D_{AB}>0$, so the two are not strictly indistinguishable. Moreover, a small $D_{AB}$ for this measurement does not imply a small trace distance for all available measurements. An example in which dispersion in a medium broadens the width of the arrival times is given in [Appendix 4, Section 4 (2)](appendix4.en.html).
 
 ## 2. Spreading of a Free Gaussian Wave Packet
 
@@ -95,13 +119,63 @@ If $T=0$, the optimal success probability is also $1/2$, and the states cannot b
 
 ### 5.1 Partial Trace and Monotonicity of the QFI
 
-Operations that discard unobservable degrees of freedom (physically allowed maps, including partial traces) do not increase the quantum Fisher information [4, 5].
+Operations that discard unobservable degrees of freedom independently of the parameter being estimated (physically allowed maps, including partial traces) do not increase the quantum Fisher information [4, 5].
 
 $$
 F_Q\!\left[\operatorname{Tr}_{\mathrm{unobs}}\rho(E)\right] \;\le\; F_Q\!\left[\rho(E)\right]
 $$
 
 What is compared is the total system and the subsystem at the same parameter value. The argument of Section 2.2 of the main text takes this inequality as a firm basis and considers situations in which the gap between the two sides grows with energy.
+
+### 5.2 Quantum Fisher Information and the Fluctuation of the Generator: The Time–Energy Relation as Estimation
+
+The quantum Fisher information of a pure state $\lvert\psi(\theta)\rangle$ is
+
+$$
+F_Q=4\left(\langle\partial_\theta\psi\vert\partial_\theta\psi\rangle-\left\lvert\langle\psi\vert\partial_\theta\psi\rangle\right\rvert^2\right)
+$$
+
+When the state changes by a unitary transformation $\lvert\psi(\theta)\rangle=e^{-i\theta G}\lvert\psi_0\rangle$ generated by $G$, substituting $\lvert\partial_\theta\psi\rangle=-iG\lvert\psi\rangle$ gives
+
+$$
+F_Q^{(\theta)}=4\left(\langle G^2\rangle-\langle G\rangle^2\right)=4(\Delta G)^2
+$$
+
+[5]. For time evolution ($G=H/\hbar$), $F_Q^{(t)}=4(\Delta H)^2/\hbar^2$: the larger the energy fluctuation, the larger the sensitivity to time. For an energy eigenstate, $\Delta H=0$; as time passes only the global phase changes, and the elapsed time cannot be read ([Appendix 1, Section 3.1 (4)](appendix1.en.html)). Substituting this into the quantum Cramér–Rao bound for locally unbiased estimation, $\operatorname{Var}(\widehat t)\ge1/F_Q^{(t)}$, gives
+
+$$
+\Delta t\,\Delta H\ \ge\ \frac{\hbar}{2},\qquad \Delta t\equiv\sqrt{\operatorname{Var}(\widehat t)}
+$$
+
+This is a relation for a single sample; for $N$ independent samples the right-hand side becomes $\hbar/(2\sqrt N)$. It has the same form as $\Delta x\,\Delta p\ge\hbar/2$ for position and momentum, but here $\Delta t$ is not the fluctuation of a time operator; it is the error in estimating the elapsed time from the change of the state. This essay uses the time–energy relation as this estimation limit and derives no universal minimum time from it ([Appendix 1, Section 5.1](appendix1.en.html)).
+
+Relations of the same form hold for other translations.
+
+| Transformation | Amount of transformation | Generator of the state transformation | Conserved quantity when the symmetry holds |
+|---|---|---|---|
+| Shifting time | Time $t$ | $H/\hbar$ | Energy |
+| Shifting position in space | Displacement $a$ | Momentum in that direction $P/\hbar$ | Momentum in that direction |
+| Rotating orientation | Angle $\phi$ | Angular momentum about the rotation axis $J/\hbar$ | Angular momentum about that axis |
+
+Noether's theorem shows that when the action is invariant under a continuous transformation, a corresponding conserved quantity exists. The quantum Fisher information, on the other hand, expresses how precisely that transformation can be read from the state. The two can be organized by the same generators, but they address different questions. Being able to generate a transformation does not by itself mean that the corresponding quantity is conserved. And even when energy is conserved, its fluctuation need not be zero: in a superposition of different energies, the relative phases of the components change while the energy distribution is preserved, and this provides a clue for reading the elapsed time.
+
+### 5.3 The QFI of the Observable Part and the Estimation of Energy
+
+[Section 2.2 of the main text](zerothOrderPhase.en.html) considers, as a hypothesis of this essay, situations in which at higher energies information flows into unobservable degrees of freedom and the QFI of the observable part decreases. Here we show by equations what happens then to the observer's estimation of energy. The unitary evolution of a closed total system is reversible, and an $E$-independent unitary evolution preserves the QFI with respect to $E$. What the observer can use is only $\rho_{\mathrm{obs}}(E)=\operatorname{Tr}_{\mathrm{unobs}}\rho(E)$, obtained by the map to a fixed observable subsystem, and by Section 5.1 its QFI does not exceed that of the total system.
+
+As $\mathrm{d}E$ approaches zero, the Bures distance approaches zero for any state. What determines the QFI is not the distance itself but the limit of the ratio of the squared distance to $(\delta E)^2$. In a range where the rank of the state does not change,
+
+$$
+F_Q\!\left[\rho_{\mathrm{obs}}\right](E)=4\lim_{\delta E\to0}\frac{D_{\mathrm{Bures}}^2\!\left(\rho_{\mathrm{obs}}(E),\rho_{\mathrm{obs}}(E+\delta E)\right)}{(\delta E)^2}
+$$
+
+When information flows into unobservable degrees of freedom and the distance of the observable part for the same $\delta E$ becomes smaller than that of the total system, this ratio decreases. With $N$ independent measurements and the conditions of the quantum Cramér–Rao bound satisfied, such as locally unbiased estimation,
+
+$$
+\operatorname{Var}(\widehat E)\ \ge\ \frac{1}{N\,F_Q\!\left[\rho_{\mathrm{obs}}\right](E)}
+$$
+
+For a single parameter, this bound is reached asymptotically by choosing a suitable measurement. With $N$ fixed, if $F_Q[\rho_{\mathrm{obs}}]\,(E)\to0$, the lower limit on the estimation error grows without bound, and the observer can no longer estimate the collision energy precisely from the observed data. Possible destinations of the information include undetected particles, highly excited states, and the internal degrees of freedom of black holes, but which of them act, and how much, is not shown in this essay. This limit is not a loss of the information of the total system but a limit on reading in the subsystem available to the observer, and it is treated as an example of the Spacetime-Limit Phase.
 
 ## 6. A Toy Model of Superposition in a Pair of Two-Level Systems
 
@@ -181,7 +255,7 @@ This comparison adds infinitesimal time division ($\Delta t\to0$) to the four li
 
 ## 10. An Estimate That Pushes Distant Discrimination to the Limits of Resources
 
-This section estimates how far one can distinguish when the maximum resources available to the observer in principle are substituted into the quantum limit on distinguishing two distant sources of Section 3.1 of the main text. Three principles of this essay are adopted: (1) the observation time has an upper limit $T_{\max}$; (2) the size of the aperture has an upper limit; (3) the precision of a measurement with a single photon is set by its wavelength (energy), and with $N$ photons it improves by up to a factor $\sqrt N$. The apparatus is also a thing in the universe and obeys the same kinds of limits; these are brought in one by one. What follows is an order-of-magnitude estimate for an example with a fixed source and is treated as an estimate of this essay (Section 10.6).
+This section estimates how far one can distinguish when the maximum resources available to the observer in principle are substituted into the quantum limit on distinguishing two distant sources of Section 3.1 of the main text. Three principles of this essay are adopted: (1) the observation time has an upper limit $T_{\max}$; (2) the size of the aperture has an upper limit; (3) the precision of a measurement with a single photon is set by its wavelength (energy), and with $N$ photons it improves by up to a factor $\sqrt N$. The apparatus is also a thing in the universe and obeys the same kinds of limits; these are brought in one by one. What follows is an order-of-magnitude estimate for an example with a fixed source and is treated as an estimate of this essay. The range of validity of the calculation is given in Section 10.6, and its status in Section 10.7.
 
 As an example, consider a source with the luminosity of the Sun (lifetime $t_{\mathrm{life}}=10^{10}$ years, emitted wavelength $\lambda_e=500$ nm, number of photons emitted over its life $N_{\mathrm{emit}}\approx3\times10^{62}$), with detection efficiency $\eta=1$. The observed wavelength is $\lambda_{\mathrm{obs}}=(1+z)\lambda_e$. This source is an example for showing orders of magnitude and does not represent a source that actually exists at each epoch. Distances are computed with the same flat ΛCDM (Planck 2018) as in the main text.
 
@@ -211,7 +285,7 @@ $$
 R_{\max}=\left(\frac{3GM}{\Lambda c^2}\right)^{1/3}
 $$
 
-[8], which serves as a measure of the size of a bound structure. Because unbound matter recedes, the mass that can be gathered is also limited to the bound structure to which the observer belongs (the Local Group, about $2\times10^{12}$ times the mass of the Sun). The limit set by the cosmological constant acts twice, on the mass and on the aperture. Then $R_{\max}\approx1.4$ Mpc, and as an order-of-magnitude measure the aperture diameter is taken as $D=2R_{\max}\approx2.8$ Mpc ($8.7\times10^{22}$ m). The turnaround radius is the size at the edge where binding breaks, so the size that can be held stably is smaller; moreover, most of the mass of the Local Group is dark matter and cannot be used for the apparatus. $D$ is therefore an overestimate, and the $s_{\mathrm{ph}}$ actually reached is larger than the values in the table of Section 10.5. With this $D$, $s_{\mathrm{ph}}$ is of order $10^{-33}$ to $10^{-24}$ m depending on distance (table in Section 10.5).
+[8], which serves as a measure of the size of a bound structure. Because unbound matter recedes, the mass that can be gathered is also limited to the bound structure to which the observer belongs (the Local Group, about $2\times10^{12}$ times the mass of the Sun). The limit set by the cosmological constant acts twice, on the mass and on the aperture. Then $R_{\max}\approx1.4$ Mpc, and as an order-of-magnitude measure the aperture diameter is taken as $D=2R_{\max}\approx2.8$ Mpc ($8.7\times10^{22}$ m). The turnaround radius is the size at the edge where binding breaks, so the size that can be held stably is smaller; moreover, most of the mass of the Local Group is dark matter and cannot be used for the apparatus. $D$ is therefore an overestimate, and the $s_{\mathrm{ph}}$ actually reached is larger than the values in the table of Section 10.5. Using the turnaround radius as a measure of the aperture of the apparatus is a premise of this essay, not a result about the turnaround radius itself (Section 10.6 (4)). With this $D$, $s_{\mathrm{ph}}$ is of order $10^{-33}$ to $10^{-24}$ m depending on distance (table in Section 10.5).
 
 ### 10.3 The Precision of a Measurement Is Set by the Wavelength of the Photons
 
@@ -227,7 +301,7 @@ This has the same form as the diffraction limit and agrees with the statement in
 
 **(2) The axis is aligned with the received light.** The center of the light can be estimated from the mean direction of arrival of the $N$ photons received, to a precision of about $\Delta\theta/\sqrt N$ (the standard error of a mean of $N$). When the axis is aligned to this precision, the proper separation that can be distinguished is about this precision times the angular diameter distance $d_A$; using $d_A(1+z)=d_M$, it has the same form as $s_{\mathrm{ph}}$ apart from a coefficient. The stretching of the observed wavelength by $(1+z)$ and the shrinking of the angular diameter distance by $1/(1+z)$ cancel, as in Section 3.1 of the main text. In the table of Section 10.5 the alignment precision is taken with a margin as $\lambda_{\mathrm{obs}}/(D\sqrt N)$, and the ratio to $s_{\mathrm{ph}}$ is about 0.5. The values in the table are for the case in which the same photons are used for both alignment and discrimination. If the photons are split between the two, each limit grows by a factor of about $\sqrt2$, and the premise that the axis is aligned more finely than the separation holds only just, without margin. The limit of alignment is of the same order as $s_{\mathrm{ph}}$ and does not form a separate wall.
 
-**(3) The precision of the shape of the apparatus.** Measuring the shape of the apparatus (the positions of its mirrors) also uses photons, and its precision is set, as in (1) and (2), by the wavelength and number of the photons used. Measuring more finely requires a shorter wavelength, that is, a higher energy, and concentrating too much energy in a small region causes gravitational collapse. The lower limit to which this precision can be brought in principle is therefore of the order of the Planck length (the same approach as the rough estimate of Section 4). Unlike (2), this lower limit is taken not to be lowered by averaging over many photons, because it is not a statistical limit of the measurement but a lower limit on localization itself, arising from concentrating energy in order to measure. The actual error is set by things such as the stability with which positions are held, and is larger than this lower limit. If the lower limit is reached, the error in the direction of the axis due to errors in the shape of the apparatus is about $l_P/D$, and the separation it sets is $l_P\,d_A/D$. As the table shows, this is well below $s_{\mathrm{ph}}$ for $z\gtrsim3$, and of the same order nearby ($z\approx0.1$).
+**(3) The precision of the shape of the apparatus.** Measuring the shape of the apparatus (the positions of its mirrors) also uses photons, and its precision is set, as in (1) and (2), by the wavelength and number of the photons used. Measuring more finely requires a shorter wavelength, that is, a higher energy, and concentrating too much energy in a small region causes gravitational collapse. The lower limit to which this precision can be brought in principle is therefore of the order of the Planck length (the same approach as the rough estimate of Section 4). Unlike (2), this lower limit is taken not to be lowered by averaging over many photons (a heuristic assumption of this essay; conclusion 1 of Section 10.5 states only that the limit from the shape of the apparatus is smaller than $s_{\mathrm{ph}}$ and does not rely on the strength of this assumption), because it is not a statistical limit of the measurement but a lower limit on localization itself, arising from concentrating energy in order to measure. The actual error is set by things such as the stability with which positions are held, and is larger than this lower limit. If the lower limit is reached, the error in the direction of the axis due to errors in the shape of the apparatus is about $l_P/D$, and the separation it sets is $l_P\,d_A/D$. As the table shows, this is well below $s_{\mathrm{ph}}$ for $z\gtrsim3$, and of the same order nearby ($z\approx0.1$).
 
 As a different estimate, the quantum limits on measuring lengths and times with clocks [10] have been combined with the gravity of the apparatus to give errors of $(l_P^2L)^{1/3}$ in measuring a length $L$ and $(t_P^2T)^{1/3}$ in measuring a time $T$, where $t_P=l_P/c$ is the Planck time [11]. This estimate is heuristic and has been criticized and disputed [12, 13]. Applied to the direction of the axis, it makes the error grow with distance and observation time and moves the wall that matters from the number of photons to the apparatus's reference rulers and clocks; (1) to (3) above do not use this estimate.
 
@@ -250,23 +324,45 @@ The table gives values for an aperture of the size of the Local Group, with the 
 From this table, the following can be said for the example with a fixed source.
 
 1. The limit that matters is $s_{\mathrm{ph}}$, set by the number of photons. The limit of alignment is of the same order, and the limit from the shape of the apparatus is well below it for $z\gtrsim3$.
-2. $s_{\mathrm{ph}}$ grows monotonically with distance: nearby because the comoving distance $d_M$ grows, and beyond the point where $(1+z)\,t_{\mathrm{life}}$ exceeds $T_{\max}$ because the photons received decrease in inverse proportion to $(1+z)$. Because $d_M$ levels off at about 14 Gpc, the unbounded growth of $s_{\mathrm{ph}}$ as $z\to\infty$ comes from the $\sqrt{1+z}$ term due to $T_{\max}$.
+2. $s_{\mathrm{ph}}$ grows monotonically with distance: nearby, because the comoving distance $d_M$ grows; and beyond the point where $(1+z)\,t_{\mathrm{life}}$ exceeds $T_{\max}$, because the photons received decrease in inverse proportion to $(1+z)$. Because $d_M$ levels off at about 14 Gpc, the continued growth of $s_{\mathrm{ph}}$ in the far range of the table comes from the $\sqrt{1+z}$ term due to $T_{\max}$. This formula cannot be extended beyond the point where the number of arriving photons is of order one (Section 10.6 (2)).
 3. Before the surface of last scattering, the opacity of (a) in the main text multiplies the usable photons by $e^{-\tau}$ and $s_{\mathrm{ph}}$ by a further $e^{\tau/2}$.
 
-Therefore, under this essay's principles that the observation time and the aperture have upper limits and that the precision of a measurement is set by the wavelength and number of the photons, within the range computed for the example with a fixed source, the smallest separation that can be distinguished grows monotonically further into the past and, as a consequence of $T_{\max}$, tends to grow without bound the further one goes back. This is an example consistent with distinctions becoming more ambiguous the further one goes back into the past. If the wavelength of the source or the number of photons it emits changes with epoch, the values change (Section 10.4).
+Therefore, under this essay's principles that the observation time and the aperture have upper limits and that the precision of a measurement is set by the wavelength and number of the photons, within the range computed in the table for the example with a fixed source, the smallest separation that can be distinguished grows monotonically the further one goes into the past. What can be said in the limit of going back further is not that the separation grows without bound, but that detections usable for discrimination themselves become rare and the decision approaches a guess (Section 10.6 (2)). This is an example consistent with distinctions becoming more ambiguous the further one goes back into the past. If the wavelength of the source or the number of photons it emits changes with epoch, the values change (Section 10.4).
 
-### 10.6 Status
+### 10.6 Range of Validity of the Calculation
+
+The table of Section 10.5 holds within the following approximations.
+
+**(1) The redshift and distance of the source are taken as constant during the observation.** The table takes the luminosity of the source as constant over its lifetime and uses the present $z$ and $d_M$ over the whole observation time $T$. $T_{\max}=10^{11}$ years is longer than the timescale of cosmic expansion $1/H_0$ (about $1.5\times10^{10}$ years), during which the redshift and distance of the source change greatly. Photons arriving later are redshifted further, and light emitted outside the event horizon does not arrive. The number of arriving photons is therefore expected to be smaller than the estimate in the table, and $s_{\mathrm{ph}}$ larger than the values in the table (this change is not computed).
+
+**(2) Many photons arrive.** The formula for $s_{\mathrm{ph}}$ is an approximation for the case in which many photons arrive ($\bar N\gg1$) and the separation is well below the diffraction limit. The alignment of the axis in Section 10.3 (2) also assumes averaging over many photons. In every row of the table the number of arriving photons exceeds $10^{40}$, so this assumption holds. However, as $z$ is increased under $T_{\max}$, the mean number of arriving photons $\bar N$ decreases as $1/(1+z)$ and falls below one at a $z$ far larger than the range of the table. Extending the formula for $s_{\mathrm{ph}}$ beyond that point does not justify saying that "the smallest distinguishable separation grows without bound".
+
+In this limit, the following lower bound, which does not rely on approximations, can be used. In the model of [Appendix 4, Section 3](appendix4.en.html) (incoherent sources, with the same total brightness for one source and for two sources), the probability $p_0$ that no photon is detected is the same under the two hypotheses, and the remaining state is the vacuum, the same under both. This bound concerns measurements of the modes entering the aperture available to the observer and does not treat light that did not enter the aperture. Its premises are (i) that $p_0$ is the same under the two hypotheses, and (ii) that the state with no photon is the same under the two hypotheses and orthogonal to the states with photons (for incoherent sources, the state separates by photon number). Because from a record with no photon no measurement of the modes entering the aperture can choose between the two hypotheses, for equal prior probabilities
+
+$$
+P_e\ \ge\ \frac12\,p_0
+$$
+
+holds. If the number of detected photons follows a Poisson distribution, $p_0=e^{-\bar N}$ and $P_e\ge\frac12e^{-\bar N}$. As $\bar N\to0$, $P_e\to\frac12$ and the decision approaches a guess. The lower bound by the fidelity in the same section also approaches $\frac12$ in this limit. What can be said in the limit is therefore not that the separation grows without bound, but that detections usable for discrimination themselves become rare.
+
+**(3) The small-angle approximation.** The expression in the main text is an approximation for the case in which the aperture is much smaller than the distance to the source and the angular separation is well below the diffraction limit $\lambda_{\mathrm{obs}}/D$. The latter was checked for each row of the table (Section 10.5). The first example of Section 10.2 ($D=r_H$) violates the former and serves only as an order-of-magnitude reference.
+
+**(4) The premise of applying the turnaround radius to the aperture.** The upper limit on the turnaround radius [8] is a result about how large a bound structure of a specified mass can become under the cosmological constant; it does not prove an upper limit on the aperture of every observing apparatus. This section adopts the premise that the apparatus fits inside the bound structure to which the observer belongs and is made from its mass, and under that premise uses $R_{\max}$ as a measure of the aperture. An apparatus that keeps working against the expansion by using energy, or a scheme that combines light received at several stations receding from each other, is outside this premise. For those cases, the measure of the upper limit on the aperture is the causally connected region (the event horizon in the first example of Section 10.2), and this section does not show a stricter upper limit. The upper limit of principle (2) is taken, under premise (4), as the size of the bound structure, and otherwise as the event horizon.
+
+### 10.7 Status
 
 | Content | Kind |
 |---|---|
 | Applying the expression of the main text (the first part of the expression in Section 10.1); the dependence on wavelength in Section 10.4 | Application of existing expressions |
-| The upper limit on the turnaround radius [8], the return to the diffraction limit under misalignment [9], the uncertainty relation between position and momentum and the diffraction limit, the standard error of a mean of $N$ | Existing results |
+| The upper limit on the turnaround radius [8] (a result about the size of a bound structure of a specified mass), the return to the diffraction limit under misalignment [9], the uncertainty relation between position and momentum and the diffraction limit, the standard error of a mean of $N$ | Existing results |
 | Bringing in the arriving fraction $T/[(1+z)\,t_{\mathrm{life}}]$; the derivations of Section 10.3 (1) to (3) | Rough estimates of this essay |
 | That the mass that can be gathered is limited to the bound structure to which the observer belongs | Consequence of existing results |
+| Using the turnaround radius as a measure of the aperture of the apparatus | Premise adopted by this essay (the apparatus fits in the bound structure to which the observer belongs; Section 10.6 (4)) |
+| $P_e\ge\frac12p_0$ in the limit in which photons do not arrive | Consequence of existing results (Section 10.6 (2)) |
 | That the observation time and the size of the aperture have upper limits, and that precision is set by the wavelength and number of the photons | Principles adopted by this essay (for the observation time, motivated by [14]) |
 | That the lower limit on the precision of the shape of the apparatus is of the order of the Planck length | Rough estimate of this essay (the same approach as Section 4); the actual error is larger |
 | The $(l_P^2L)^{1/3}$-type estimate [11] | Heuristic estimate; it has been criticized and disputed [12, 13]. Not used for the conclusion of this section |
-| The numbers | Orders of magnitude. When the aperture is large compared with the distance to the source, as in the first example of Section 10.2, the assumptions of the expression in the main text (small angles and so on) fail |
+| The numbers | Orders of magnitude, based on the approximations that the redshift and distance of the source are constant during the observation and that many photons arrive (Section 10.6 (1), (2)). When the aperture is large compared with the distance to the source, as in the first example of Section 10.2, the assumptions of the expression in the main text (small angles and so on) fail |
 | The conclusion of Section 10.5 | Estimate of this essay (based on the three principles above and the example with a fixed source) |
 
 ## References
@@ -291,4 +387,4 @@ Therefore, under this essay's principles that the observation time and the apert
 ---
 
 **Author**: 5garashi.com Design Office  
-**Last updated**: 2026-11-08 JST
+**Last updated**: 2026-11-11 JST

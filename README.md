@@ -3,13 +3,15 @@
   概要 / Description: zeroPhase リポジトリの案内 / About this repository
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.4.0
+  版 / Version: 2.4.1
   ライセンス / License: CC BY-ND 4.0(tools/ と .github/workflows/ は MIT)
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
 # zeroPhase — 観測限界と未分化の原点 / Observation Limits and the Undifferentiated Origin
 
-バージョン / Version: 2.4.0([改版履歴 / Changelog](CHANGELOG.md))
+バージョン / Version: 2.4.1([改版履歴 / Changelog](CHANGELOG.md))
+
+DOI: [10.5281/zenodo.24134735](https://doi.org/10.5281/zenodo.24134735)(Zenodo。すべての版に共通で、最新の版に解決する / shared by all versions, resolves to the latest version)
 
 数式は Markdown の `$…$` / `$$…$$` で記述し、公開ページでは同梱の MathJax 3.2.2 (Apache-2.0、`assets/vendor/mathjax/LICENSE`) で表示します。数式描画のための外部 CDN 通信はありません。
 Equations use Markdown math notation and render with the bundled MathJax 3.2.2 (Apache-2.0), without external CDN requests.

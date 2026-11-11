@@ -10,7 +10,7 @@ description: 時空限界相・次元縮減相・第零次相を通じて、量�
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-28
   最終更新 / Last updated: 2026-11-11 JST
-  版 / Version: 2.4.0
+  版 / Version: 2.4.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,9 @@ description: 時空限界相・次元縮減相・第零次相を通じて、量�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>2.4.0</span>　**更新日:** 2026-11-11 JST
+**版:** <span data-version>2.4.1</span>　**更新日:** 2026-11-11 JST
+
+**DOI:** [10.5281/zenodo.24134735](https://doi.org/10.5281/zenodo.24134735)（Zenodo。すべての版に共通で、最新の版に解決する）
 
 本試論は査読を受けていない試論であり、新しい実験・観測のデータは含まない。数値は、既存の理論と公表値に基づく計算の例である。
 

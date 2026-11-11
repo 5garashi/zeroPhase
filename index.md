@@ -9,6 +9,8 @@ lang: ja
 
 This essay follows measurement limits from quantum physics to the extremes of cosmology, and tentatively names the limit where the very criteria for telling things apart lose their meaning the "Zeroth-Order Phase". It is a thought experiment, not a paper with quantitative predictions.
 
+DOI: [10.5281/zenodo.24134735](https://doi.org/10.5281/zenodo.24134735)（Zenodo。すべての版に共通で、最新の版に解決する / shared by all versions, resolves to the latest version）
+
 ## 本文を読む / Read the essay
 
 - [日本語 / Japanese](zerothOrderPhase.html)

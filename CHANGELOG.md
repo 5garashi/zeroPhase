@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.4.0
+  版 / Version: 2.4.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,11 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.4.1 — 2026-11-11
+
+- 日英の本文の版の行の下、README、index.md に、Zenodo の DOI（10.5281/zenodo.24134735、すべての版に共通で、最新の版に解決する）を加えた。2.4.0 を Zenodo に登録したことによる。
+  Added the Zenodo DOI (10.5281/zenodo.24134735, which is shared by all versions and resolves to the latest version) below the version line of the Japanese and English texts of the essay, and to the README and index.md, following the registration of version 2.4.0 on Zenodo.
 
 ## 2.4.0 — 2026-11-11
 

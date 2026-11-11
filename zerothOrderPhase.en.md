@@ -10,7 +10,7 @@ description: An exploratory essay on the limits of discrimination in quantum mea
   Author: 5garashi.com Design Office
   Created: 2026-10-31
   Last updated: 2026-11-11 JST
-  Version: 2.4.0
+  Version: 2.4.1
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -18,7 +18,9 @@ description: An exploratory essay on the limits of discrimination in quantum mea
 
 **Author:** 5garashi.com Design Office
 
-**Version:** <span data-version>2.4.0</span>　**Last updated:** 2026-11-11 JST
+**Version:** <span data-version>2.4.1</span>　**Last updated:** 2026-11-11 JST
+
+**DOI:** [10.5281/zenodo.24134735](https://doi.org/10.5281/zenodo.24134735) (Zenodo; shared by all versions, resolves to the latest version)
 
 This is an exploratory essay that has not been peer reviewed. It contains no new experimental or observational data; the numbers are worked examples based on existing theory and published values.
 

@@ -3,7 +3,7 @@
   概要 / Description: 日本語版・英語版の文書とWeb表示の確認方法・確認記録
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-04
-  版 / Version: 2.4.0
+  版 / Version: 2.4.1
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -26,6 +26,17 @@
 | 印刷 | 白背景を指定するCSSを確認。実際のPDF・紙面は別途確認する |
 
 独立数式は公開前の原稿と比較する。本文の数式表現を変える場合は意味も別にレビューする。文中数式は `python tools/check_math.py` で、Markdown として処理されて壊れる書き方（縦棒、`](`、バックスラッシュの後の記号、一つの段落で強調になる `_`）がないことを確かめる。この検査は、過去の不具合の例集による自己試験（`--self-test`）とともに、Pagesの配布の前とプルリクエストでGitHub Actionsが自動で動かし、問題があれば公開しない。新しい崩れを見つけたら、例集（`CORPUS`）に足す。公開後は、各ページで描画されずに残った `$` がないことも確かめる。版は `python tools/check_version.py` で確認し、個々の改訂文書のヘッダーも読む。
+
+## 2.4.1の確認（2026-11-11）
+
+確認者：Claude。日英の本文、README、index.md に Zenodo の DOI（10.5281/zenodo.24134735）を加えた。
+
+| 項目 | 判定 | 根拠・範囲 |
+|---|---|---|
+| DOI の解決 | 合格 | `https://doi.org/10.5281/zenodo.24134735`（すべての版）と版 2.4.0 の DOI が、どちらも Zenodo の記録 24134736 に解決することを確かめた。記録の版 2.4.0、許諾 cc-by-nd-4.0、資料の種類 preprint を Zenodo の API で確かめた |
+| 英訳（別AI） | 合格（指摘に対応） | 加えた行と改版履歴の日英を Copilot に依頼した（`-Kind translation`）。指摘2件（いずれも C）を採った：「すべての版を指す」を、すべての版に共通で最新の版に解決すると明確にした。改版履歴の英語を "texts of the essay"・"version 2.4.0" にした |
+| 文中数式・版 | 合格 | `python tools/check_math.py --self-test` は 11/11、`python tools/check_math.py` は問題 0、`python tools/check_version.py` で VERSION 2.4.1 と改訂ファイルの版、data-version の一致を確認 |
+| 公開ページの表示 | 未実施 | 公開後に、日英の本文と index で DOI の行とリンク先、版の表示を確かめる |
 
 ## 2.4.0の確認（2026-11-11）
 

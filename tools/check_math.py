@@ -89,6 +89,8 @@ CORPUS = {
         # 段落に一つだけの _ と、]( にならない括弧は崩れないことを公開ページで確かめた
         "部分系 $\\rho_{\\mathrm{obs}} = \\operatorname{Tr}_{\\mathrm{unobs}}\\rho$ について",
         "$N\\le\\exp[A/(4l_P^2)]$ と表す。",
+        # 2.4.0 付録1: 同じ段落で }_ が2回になるのを \nolimits で避けた書き方。公開ページで崩れないことを確かめた
+        "$\\mathcal E_O(\\rho)=\\operatorname{Tr}\\nolimits_B(\\rho)\\otimes I_B/d_B$ である。部分トレース $\\rho_A=\\operatorname{Tr}\\nolimits_B\\rho$ は",
     ],
 }
 

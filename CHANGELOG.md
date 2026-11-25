@@ -3,7 +3,7 @@
   概要 / Description: zeroPhase の改版履歴 / Revision history of zeroPhase
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-10-31
-  版 / Version: 2.4.1
+  版 / Version: 2.5.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -11,6 +11,18 @@
 
 版ごとの変更を、新しい版を上に書く(Design Office Identity 12-7 (9))。
 Changes by version, newest first (Identity 12-7 (9)).
+
+## 2.5.0 — 2026-11-26
+
+- 第零次相の定義を、$C$ を与えられない境界へ広げた。付録3 第4節で、境界での区別の度合いを、接近の領域 $\Lambda$ の全体での上極限 $\Delta_O(\lambda_c):=\limsup_{\lambda\to\lambda_c,\ \lambda\in\Lambda}\Delta_O(\lambda)$ で定め、自明に0になる場合などを除く4つの約束を置いた。付録3 第4.3節に、仮定つきの命題（有界な相互作用の強さを振動数で抑えると $\Delta_O\le4\pi\eta\int\nu_O\,\mathrm dt$）と証明、CCCの遠い未来への当てはめ、言えないことを加えた。本文 第4.3節・第6節・図1の説明、付録1の記号の一覧も合わせた。$C$ を与えられる所での定義は変えていない（日英）。
+  Extended the definition of the Zeroth-Order Phase to boundaries at which $C$ cannot be given. Appendix 3, Section 4 defines the degree of distinction at a boundary by the limit superior over the approach region $\Lambda$, $\Delta_O(\lambda_c):=\limsup_{\lambda\to\lambda_c,\ \lambda\in\Lambda}\Delta_O(\lambda)$, with four conventions that exclude, among others, cases in which it is trivially 0. Appendix 3, Section 4.3 adds a proposition under assumptions ($\Delta_O\le4\pi\eta\int\nu_O\,\mathrm dt$ when the strength of bounded interactions is limited by a frequency) with its proof, an application to the far future of CCC, and what it does not show. Section 4.3, Section 6, and the caption of Figure 1 in the main text and the list of symbols in Appendix 1 were updated accordingly. The definition where $C$ can be given is unchanged (Japanese and English).
+- 別のAI（Codex）の指摘により、条件の抜けを直した。付録3 第4節で、$\rho_O(q)$ が一定で $d_O=0$ となるのは、比べる組が範囲を結ぶ場合に限ると書き、反例を加えた。付録3 第4.2節の条件 (A) に、過程の組では途中の介入を含めて結果の分布が同じになることを要すると加えた。本文 第4.3節で、時空の枠組みそのものが成り立たないことを、追加の仮説として書き分けた（日英）。
+  Corrected missing conditions pointed out by another AI (Codex). Appendix 3, Section 4 now states, with a counterexample, that $\rho_O(q)$ is constant and $d_O=0$ only when the pairs compared link the range. Condition (A) in Appendix 3, Section 4.2 now requires, for pairs of processes, that the outcome distributions be the same including under intermediate interventions. Section 4.3 of the main text now states separately, as an additional hypothesis, that the spacetime framework itself does not hold (Japanese and English).
+
+## 2.4.3 — 2026-11-17
+
+- 区別の度合いの定義を式で示した。付録3 第4節で、文章だけで定めていた組ごとの区別の度合い $\delta_O(x,x')$ を独立の式にし、区別の度合い $\Delta_O$ をそのすべての組についての上限 $\Delta_O=\sup_{(x,x')\in C}\delta_O(x,x')$ として書き直した。本文 第4.3節にも、$\delta_O$ と $\Delta_O$ の式と「第零次相 $\iff\Delta_O=0$」を載せ、条件の詳細は付録3 第4節を参照するようにした。付録1 第2節の記号の一覧に $\delta_O$・$\Delta_O$ の行を加えた。定義の中身は変えていない（日英）。
+  Stated the definition of the degree of distinction as formulas. In Appendix 3, Section 4, the degree of distinction for a pair, $\delta_O(x,x')$, which had been defined only in words, is now a displayed formula, and the degree of distinction $\Delta_O$ is rewritten as its supremum over all pairs, $\Delta_O=\sup_{(x,x')\in C}\delta_O(x,x')$. Section 4.3 of the main text now also gives the formulas for $\delta_O$ and $\Delta_O$ and "Zeroth-Order Phase $\iff\Delta_O=0$", referring to Appendix 3, Section 4 for the conditions in detail. Rows for $\delta_O$ and $\Delta_O$ were added to the list of symbols in Appendix 1, Section 2. The content of the definition is unchanged (Japanese and English).
 
 ## 2.4.1 — 2026-11-11
 

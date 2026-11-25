@@ -11,8 +11,8 @@ description: 既存理論・認識論的定義・独自仮説を分け、観測�
   概要 / Description: 三相モデルの定義、観測者による区別と有効次元の定義、論理的背景
   作成者 / Author: 5garashi.com設計事務所 / 5garashi.com Design Office
   作成日 / Created: 2026-11-04
-  最終更新 / Last updated: 2026-11-11 JST
-  版 / Version: 2.4.0
+  最終更新 / Last updated: 2026-11-26 JST
+  版 / Version: 2.5.0
   ライセンス / License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -20,7 +20,7 @@ description: 既存理論・認識論的定義・独自仮説を分け、観測�
 
 **著者 / Author:** 5garashi.com設計事務所 / 5garashi.com Design Office
 
-**版:** <span data-version>2.4.0</span>　**更新日:** 2026-11-11 JST
+**版:** <span data-version>2.5.0</span>　**更新日:** 2026-11-26 JST
 
 本付録は、観測者にとっての識別可能性を「時空限界相・次元縮減相・第零次相」という三つの概念で整理する論理的枠組みを示す。既存理論が示す制約、認識論的定義、独自仮説の境界を切り分け、観測者による区別と有効次元を測定の言葉で定義する。第1〜2節で区別と三相を定義し、第3節で状態族による運動学の模型を、第4節で観測者の記録が緩和する動力学の模型を示し、第5節で読む際の前提（一般相対性理論での運動学と動力学の区別を含む）を、第6節で課題をまとめる。
 
@@ -83,6 +83,7 @@ $\mathcal A_O$ は、手元の装置ではなく、物理法則と資源の制�
 | $N$、$N_{\max}$ | 測定回数と、観測者の資源によるその上限 | 第2.1節 (4)、[本文 第4.2節](zerothOrderPhase.html) |
 | $D_{\mathrm{eff}}$ | 有効次元。有限の $N$ では、各方向の読み取りやすさを表す補助指標 | 第2.1節 (5) |
 | $d_O$ | ある範囲で一定の $F$ のランク。相の区分に使う | 第2.1節 (6) |
+| $\delta_O(x,x')$、$\Delta_O$ | $\delta_O$：組ごとの区別の度合い。$\Delta_O$：そのすべての組についての上限（区別の度合い）。第零次相は $\Delta_O=0$。境界 $\lambda_c$ での値は上極限で定める | [本文 第4.3節](zerothOrderPhase.html)、[付録3 第4節](appendix3.html) |
 | $P_\mu$、$G_i$ | 時空の移動の生成子（時間の方向はハミルトニアン、空間の方向は運動量）と、$K$ の固有方向の生成子 | 第3.1節 (1)・(3) |
 
 ### 2.1 有効次元の定義
@@ -482,4 +483,4 @@ $$
 ---
 
 **作成者 / Author**: 5garashi.com設計事務所 / 5garashi.com Design Office  
-**最終更新 / Last updated**: 2026-11-11 JST
+**最終更新 / Last updated**: 2026-11-26 JST

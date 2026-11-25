@@ -11,8 +11,8 @@ description: Separates existing theory, epistemological definitions, and origina
   Description: Definitions of the three-phase model, indistinguishability for an observer and the effective dimension, and the logical background (English translation)
   Author: 5garashi.com Design Office
   Created: 2026-11-07
-  Last updated: 2026-11-11 JST
-  Version: 2.4.0
+  Last updated: 2026-11-26 JST
+  Version: 2.5.0
   License: CC BY-ND 4.0
   SPDX-License-Identifier: CC-BY-ND-4.0
 -->
@@ -20,7 +20,7 @@ description: Separates existing theory, epistemological definitions, and origina
 
 **Author:** 5garashi.com Design Office
 
-**Version:** <span data-version>2.4.0</span>　**Last updated:** 2026-11-11 JST
+**Version:** <span data-version>2.5.0</span>　**Last updated:** 2026-11-26 JST
 
 This appendix presents the logical framework that organizes distinguishability for an observer by three concepts: the Spacetime-Limit Phase, the Dimension-Reduction Phase, and the Zeroth-Order Phase. It separates the constraints shown by existing theory, epistemological definitions, and original hypotheses, and defines indistinguishability for an observer and the effective dimension in the language of measurement. Sections 1 and 2 define distinction and the three phases; Section 3 gives kinematic models based on families of states; Section 4 gives dynamical models in which the observer's records relax; Section 5 collects the premises for reading the equations (including the distinction between kinematics and dynamics in general relativity); and Section 6 summarizes open tasks.
 
@@ -83,6 +83,7 @@ The main symbols used in this essay are summarized below.
 | $N$, $N_{\max}$ | The number of measurements, and its upper limit set by the observer's resources | Section 2.1 (4), [Main text, Section 4.2](zerothOrderPhase.en.html) |
 | $D_{\mathrm{eff}}$ | The effective dimension; at finite $N$, an auxiliary indicator of how readable each direction is | Section 2.1 (5) |
 | $d_O$ | The rank of $F$, constant over a range of the parameters; used to classify phases | Section 2.1 (6) |
+| $\delta_O(x,x')$, $\Delta_O$ | $\delta_O$: the degree of distinction for a pair; $\Delta_O$: its supremum over all pairs (the degree of distinction). The Zeroth-Order Phase is $\Delta_O=0$. The value at a boundary $\lambda_c$ is defined by a limit superior | [Main text, Section 4.3](zerothOrderPhase.en.html), [Appendix 3, Section 4](appendix3.en.html) |
 | $P_\mu$, $G_i$ | The generators of spacetime translations (the Hamiltonian for the time direction, the momentum for spatial directions), and the generators along the eigendirections of $K$ | Section 3.1 (1), (3) |
 
 ### 2.1 Definition of the Effective Dimension
@@ -480,4 +481,4 @@ To develop the three phases into a physical model, the following must be specifi
 ---
 
 **Author**: 5garashi.com Design Office  
-**Last updated**: 2026-11-11 JST
+**Last updated**: 2026-11-26 JST
